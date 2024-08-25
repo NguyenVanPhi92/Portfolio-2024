@@ -13,12 +13,23 @@
 
 // export default ScrollToTop
 import { BiArrowToTop } from 'react-icons/bi'
+import { Link } from 'react-scroll'
 
 const ScrollToTop = () => {
     return (
-        <button className='bg-teal-600 text-white fixed right-4 bottom-4 opacity-90 p-2 m-4 float-right rounded-md'>
+        <Link
+            activeClass='active'
+            spy={true}
+            smooth={true}
+            offset={-120}
+            duration={500}
+            //   onSetActive={handleSetActive}
+            to='home'
+            className='cursor-pointer bg-teal-600 text-white fixed right-4 bottom-4 opacity-90 p-2 m-4 float-right rounded-md'
+            aria-current='pag'
+        >
             <BiArrowToTop />
-        </button>
+        </Link>
     )
 }
 

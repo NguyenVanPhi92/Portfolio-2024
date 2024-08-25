@@ -3,31 +3,33 @@ import TitleComponents from './Title'
 
 const ExperienceComponent = () => {
     return (
-        <div className='border-b border-neutral-900 pb-4'>
+        <div className='dark:border-b dark:border-neutral-900 pb-4' id='experience'>
             <TitleComponents title='Experience' />
 
             <div>
                 {EXPERIENCES.map((item, idx) => (
                     <div className='mb-8 flex flex-wrap lg:justify-center' key={idx}>
                         <div className='w-full lg:w-1/4'>
-                            <p className='mb-2 text-[18px] text-neutral-400'>{item.year}</p>
+                            <p className='mb-2 text-[18px] text-neutral-700 dark:text-neutral-400'>
+                                {item.year}
+                            </p>
                         </div>
 
                         <div className='w-full max-w-xl lg:w-3/4:'>
-                            <h6 className='mb-2 font-semibold'>
+                            <h6 className='mb-2 font-semibold text-neutral-700 dark:text-neutral-400'>
                                 {item.role} -{' '}
                                 <span className='text-base font-semibold text-teal-700'>
                                     {item.company}
                                 </span>
                             </h6>
-                            <p className='mb-4 font-light text-sm text-neutral-400'>
+                            <p className='mb-4 font-light text-sm text-neutral-700 dark:text-neutral-400'>
                                 {item.description}
                             </p>
 
                             {item.technologies.map((tech, idx) => (
                                 <span
                                     key={idx}
-                                    className='mr-2 mt-4 rounded-md bg-neutral-800 text-neutral-400 px-2 py-1 text-sm font-medium'
+                                    className='mr-2 mt-4 rounded-md bg-neutral-700 dark:bg-neutral-800 text-neutral-300 dark:text-neutral-400 px-2 py-1 text-sm font-medium'
                                 >
                                     {tech}
                                 </span>

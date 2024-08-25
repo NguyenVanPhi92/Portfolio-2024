@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 import AboutComponent from './components/About'
 import ContactComponent from './components/Contact'
@@ -12,6 +13,20 @@ import TechnologiesComponent from './components/Technologies'
 import TheEndComponent from './components/TheEnd'
 
 function App() {
+    const [theme, setTheme] = useState('light')
+
+    useEffect(() => {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark')
+            document.documentElement.classList.remove('light')
+        } else {
+            document.documentElement.classList.add('light')
+            document.documentElement.classList.remove('dark')
+        }
+    }, [theme])
+
+    const handleThemeSwitch = () => setTheme(theme === 'dark' ? 'light' : 'dark')
+
     return (
         /**
          * selection:text-cyan-300 selection:bg-cyan-300
@@ -19,11 +34,11 @@ function App() {
          */
         <div className='overflow-hidden text-neutral-300 antialiased selection:text-cyan-300 selection:bg-cyan-300'>
             <div className='fixed top-0 -z-10 h-full w-full'>
-                <div className='absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'></div>
+                <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'></div>
             </div>
 
             <div className='mb-40'>
-                <HeaderComponent />
+                <HeaderComponent darkMode={handleThemeSwitch} theme={theme} />
             </div>
 
             <div className='w-10/12 mx-auto px-8'>
@@ -33,7 +48,7 @@ function App() {
                 <ProjectsComponent />
                 <TechnologiesComponent />
                 <EducationComponent />
-                {/* <InterestComponent /> */}
+                <InterestComponent />
                 <ContactComponent />
                 <TheEndComponent />
             </div>

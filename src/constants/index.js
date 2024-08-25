@@ -9,32 +9,26 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
     {
-        year: '2023 - Present',
-        role: 'Senior Full Stack Developer',
-        company: 'Google Inc.',
-        description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-        technologies: ['Javascript', 'React.js', 'Next.js', 'mongoDB']
+        year: '2022',
+        role: 'Intern Reactjs Developer',
+        company: 'Biz4 Group.',
+        description: `Experience the company's products (web, fintech applications). In case of checking sp at user location. Make a landing page for the company. Technologies used: HTML, SCSS, MUI, React Hook, React Hook Form, Yup, Resolvers, Axios, Typescript, Redux, Redux Toolkit,...`,
+        technologies: ['Javascript', 'Typescript', 'React.js', 'MUI', 'SCSS/SASS']
     },
     {
         year: '2022 - 2023',
         role: 'Frontend Developer',
-        company: 'Adobe',
-        description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-        technologies: ['HTML', 'CSS', 'Vue.js', 'mySQL']
+        company: 'Satavan',
+        description: `Participate in e-commerce projects for various companies. Responsible for validating data forms, displaying product data on the UI, and performing functions such as adding and editing customer addresses. Technologies used: React, React Hook Form, Yup, Resolvers, Axios, Typescript, SWR,... Website: https://womart.vn `,
+        technologies: ['HTML', 'CSS', 'SCSS', 'TailwindCSS', 'Typescript', 'React', 'Next', 'SWR']
     },
     {
-        year: '2021 - 2022',
-        role: 'Full Stack Developer',
-        company: 'Facebook',
-        description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-        technologies: ['Python', 'Svelte', 'Three.js', 'Postgres']
-    },
-    {
-        year: '2020 - 2021',
-        role: 'Software Engineer',
-        company: 'Paypal',
-        description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-        technologies: ['Ruby', 'Rails', 'PHP', 'Sqlite']
+        year: '2023 - 2024',
+        role: 'Collaborator',
+        company: 'Vietsing Global',
+        description: `Design lessons for teachers using PowerPoint, ActivInspire, and other relevant tools. Support teachers in recording lectures. Write progress reports on work. Discuss, hand over, and report work to the team and team.
+`,
+        technologies: []
     }
 ]
 

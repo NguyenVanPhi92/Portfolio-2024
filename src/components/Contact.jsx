@@ -6,21 +6,21 @@ import { IoMdPhonePortrait } from 'react-icons/io'
 
 const ContactComponent = () => {
     return (
-        <div className='border-b border-neutral-900'>
+        <div className='border-b border-neutral-900' id='contact'>
             <TitleComponents title='Get in touch' />
 
-            <div className='text-neutral-400 tracking-tighter flex justify-center items-center gap-6'>
-                <div className='my-4 flex items-center gap-2'>
+            <div className='dark:text-neutral-400 text-neutral-700 tracking-tighter flex justify-center items-center gap-6 mb-8'>
+                <div className='flex items-center gap-2'>
                     <FaRegAddressBook />
                     <p>{CONTACT.address}</p>
                 </div>
 
-                <div className='my-4 flex items-center gap-2'>
+                <div className='flex items-center gap-2'>
                     <MdOutlineEmail />
                     <p>{CONTACT.email}</p>
                 </div>
 
-                <div className='my-4 flex items-center gap-2'>
+                <div className='flex items-center gap-2'>
                     <IoMdPhonePortrait />
                     <p>{CONTACT.phoneNo}</p>
                 </div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import TitleComponents from './Title'
 const AboutComponent = () => {
     return (
-        <div className='border-b border-neutral-900 pb-4'>
+        <div className='dark:border-b dark:border-neutral-900 pb-4' id='about'>
             <TitleComponents title='About' subTitle='Me' />
 
             <div className='flex flex-wrap'>
@@ -31,7 +31,9 @@ const AboutComponent = () => {
                         initial={{ opacity: 0, x: 100 }}
                         className='flex justify-center lg:justify-start'
                     >
-                        <p className='my-2 max-w-xl py-4 font-light'>{ABOUT_TEXT}</p>
+                        <p className='my-2 max-w-xl py-4 text-neutral-700 dark:font-light'>
+                            {ABOUT_TEXT}
+                        </p>
                     </motion.div>
                 </div>
             </div>
