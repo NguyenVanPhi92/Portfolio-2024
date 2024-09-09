@@ -1,4 +1,5 @@
 import { RiReactjsLine } from 'react-icons/ri'
+// import { FaHtml5 } from "react-icons/fa";
 import { VscVscode } from 'react-icons/vsc'
 // Import Swiper React components
 import { CgFigma } from 'react-icons/cg'
@@ -18,7 +19,7 @@ import TitleComponents from './Title'
 const TechnologiesComponent = () => {
     //slider
     return (
-        <div className='dark:border-b dark:border-neutral-900 pb-4' id='technology'>
+        <div className='pb-4 dark:border-b dark:border-neutral-900' id='technology'>
             <TitleComponents title='Technologies' />
 
             <Swiper
@@ -40,14 +41,14 @@ const TechnologiesComponent = () => {
             >
                 {Array.from({ length: 30 }, (v, i) => i).map((_, idx) => (
                     <SwiperSlide key={idx}>
-                        <div className='rounded-2xl border w-max dark:border-neutral-800 p-4'>
+                        <div className='p-4 border rounded-2xl w-max dark:border-neutral-800'>
                             <RiReactjsLine className='text-4xl text-cyan-400' />
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
 
-            <div className='flex justify-center items-center gap-4 w-full'>
+            <div className='flex items-center justify-center w-full gap-4'>
                 <VscVscode className='text-4xl text-cyan-600' />
                 <FaGithub className='text-4xl text-slate-700' />
                 <SiPostman className='text-4xl text-orange-500' />

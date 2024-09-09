@@ -13,7 +13,7 @@ import TechnologiesComponent from './components/Technologies'
 import TheEndComponent from './components/TheEnd'
 
 function App() {
-    const [theme, setTheme] = useState('light')
+    const [theme, setTheme] = useState('dark')
 
     useEffect(() => {
         if (theme === 'dark') {
@@ -32,16 +32,17 @@ function App() {
          * selection:text-cyan-300 selection:bg-cyan-300
          * click text auto blue
          */
-        <div className='overflow-hidden text-neutral-300 antialiased selection:text-cyan-300 selection:bg-cyan-300'>
-            <div className='fixed top-0 -z-10 h-full w-full'>
-                <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'></div>
+        <div className='overflow-hidden antialiased text-neutral-300 selection:text-cyan-300 selection:bg-cyan-300'>
+            <div className='fixed top-0 w-full h-full -z-10'>
+                <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-[#0B001C] '></div>
+                {/* <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'></div> */}
             </div>
 
             <div className='mb-40'>
                 <HeaderComponent darkMode={handleThemeSwitch} theme={theme} />
             </div>
 
-            <div className='w-10/12 mx-auto px-8'>
+            <div className='w-10/12 px-8 mx-auto'>
                 <HeroComponent />
                 <AboutComponent />
                 <ExperienceComponent />

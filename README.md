@@ -3,6 +3,8 @@ image motion: https://codesandbox.io/p/sandbox/nefejamesframer-motion-image-hove
 image motion: https://codepen.io/KiddoKiddo/pen/EEeGKZ
 fix scroll: https://www.youtube.com/watch?v=MjHlltcA-nA
 
+Bug: làm context darkmode
+
 -   Tech
 
 1. vite - npm
@@ -15,6 +17,8 @@ fix scroll: https://www.youtube.com/watch?v=MjHlltcA-nA
 8. swiperjs - slider
 9. Dark mode
 10. React-scroll
+11. React Context
+    Deploy Vercel
 
 Color text:
 mode dark: text-neutral-400 mode light: text-neutral-700
