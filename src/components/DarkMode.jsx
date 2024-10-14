@@ -1,15 +1,28 @@
+import { useContext } from 'react'
 import { FaMoon } from 'react-icons/fa'
 import { MdSunny } from 'react-icons/md'
-const DarkModeComponent = (props) => {
-    const { darkMode } = props
-    console.log(darkMode)
+import { MyContext } from '../contexts/app.context'
+const DarkModeComponent = () => {
+    const { darkMode: theme, dispatch } = useContext(MyContext)
+
+    const handleThemeSwitch = () => {
+        if (theme === 'dark') {
+            dispatch({ type: 'DARK_MODE', payload: 'light' })
+            document.documentElement.classList.add('dark')
+            document.documentElement.classList.remove('light')
+        } else {
+            dispatch({ type: 'DARK_MODE', payload: 'dark' })
+            document.documentElement.classList.add('light')
+            document.documentElement.classList.remove('dark')
+        }
+    }
 
     return (
         <button
-            className='border border-gray-700 opacity-90 p-2 m-4 float-right rounded-md hover:opacity-65 duration-300'
-            onClick={darkMode}
+            className='float-right p-2 m-4 duration-300 border border-gray-700 rounded-md opacity-90 hover:opacity-65'
+            onClick={handleThemeSwitch}
         >
-            {props.theme === 'light' ? <MdSunny /> : <FaMoon />}
+            {theme === 'light' ? <MdSunny /> : <FaMoon />}
         </button>
     )
 }

@@ -1,4 +1,4 @@
-import aboutImg from '../assets/about.jpg'
+import aboutImg from '../assets/pic/about/about-img.jpg'
 import { ABOUT_TEXT } from '../constants'
 import { motion } from 'framer-motion'
 import TitleComponents from './Title'

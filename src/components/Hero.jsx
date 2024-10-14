@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion'
 import { CiSaveDown2 } from 'react-icons/ci'
 import cv from '../assets/cv.pdf'
-// import profile from '../assets/hero.jpg'
-import profile1 from '../../public/hero_setup.avif'
+import heroImg from '../assets/pic/hero/hero-img.png'
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -39,7 +38,7 @@ const HeroComponent = () => {
                             animate='visible'
                             className='text-4xl bg-gradient-to-r dark:text-neutral-300 text-neutral-700'
                         >
-                            Felly Nguyen
+                            Van Phi Nguyen
                         </motion.span>
                         <motion.p
                             variants={container(0.6)}
@@ -58,7 +57,7 @@ const HeroComponent = () => {
                     <a
                         href={cv}
                         className='flex items-center gap-1 px-2 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-400 dark:bg-emerald-700 dark:hover:bg-emerald-600 text-neutral-100 dark:text-neutral-200 w-max'
-                        download
+                        target='_blank'
                     >
                         Resume
                         <CiSaveDown2 />
@@ -71,9 +70,9 @@ const HeroComponent = () => {
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 1 }}
-                            src={profile1}
+                            src={heroImg}
                             alt='profile'
-                            className='object-cover shadow-lg rounded-2xl'
+                            className='object-cover'
                         />
                     </div>
                 </div>

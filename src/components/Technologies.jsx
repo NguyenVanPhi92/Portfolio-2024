@@ -1,11 +1,21 @@
-import { RiReactjsLine } from 'react-icons/ri'
-// import { FaHtml5 } from "react-icons/fa";
+import { BiLogoTypescript } from 'react-icons/bi'
+import { FaHtml5, FaSass } from 'react-icons/fa'
+import { FaSquareJs } from 'react-icons/fa6'
+import { IoLogoCss3, IoLogoFirebase } from 'react-icons/io5'
+import { RiNextjsFill, RiReactjsLine } from 'react-icons/ri'
 import { VscVscode } from 'react-icons/vsc'
 // Import Swiper React components
 import { CgFigma } from 'react-icons/cg'
 import { FaGithub } from 'react-icons/fa'
 import { FaGitAlt } from 'react-icons/fa6'
-import { SiPostman } from 'react-icons/si'
+import {
+    SiJsonwebtokens,
+    SiPostman,
+    SiReacthookform,
+    SiReactquery,
+    SiRedux,
+    SiTailwindcss
+} from 'react-icons/si'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
@@ -13,6 +23,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 // import required modules
+import { MdHttp } from 'react-icons/md'
 import { Autoplay } from 'swiper/modules'
 import TitleComponents from './Title'
 
@@ -20,10 +31,10 @@ const TechnologiesComponent = () => {
     //slider
     return (
         <div className='pb-4 dark:border-b dark:border-neutral-900' id='technology'>
-            <TitleComponents title='Technologies' />
+            <TitleComponents title='Technologies & ' subTitle='Tools' />
 
             <Swiper
-                slidesPerView={10}
+                slidesPerView={8}
                 spaceBetween={10}
                 // centeredSlides={true}
                 autoplay={{
@@ -39,13 +50,63 @@ const TechnologiesComponent = () => {
                 modules={[Autoplay]}
                 className='flex flex-wrap items-center justify-center gap-4 w-[800px] mb-8'
             >
-                {Array.from({ length: 30 }, (v, i) => i).map((_, idx) => (
-                    <SwiperSlide key={idx}>
-                        <div className='p-4 border rounded-2xl w-max dark:border-neutral-800'>
-                            <RiReactjsLine className='text-4xl text-cyan-400' />
-                        </div>
+                <div className='flex'>
+                    <SwiperSlide className='p-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <RiReactjsLine className='m-auto text-4xl text-cyan-400' />
                     </SwiperSlide>
-                ))}
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <FaHtml5 className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <IoLogoCss3 className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <FaSquareJs className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <BiLogoTypescript className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <SiRedux className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <SiReactquery className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <RiNextjsFill className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <IoLogoFirebase className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <SiTailwindcss className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <FaSass className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <MdHttp className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <SiJsonwebtokens className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+
+                    <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
+                        <SiReacthookform className='m-auto text-4xl text-cyan-400' />
+                    </SwiperSlide>
+                </div>
             </Swiper>
 
             <div className='flex items-center justify-center w-full gap-4'>

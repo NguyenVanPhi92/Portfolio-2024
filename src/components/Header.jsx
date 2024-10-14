@@ -4,15 +4,26 @@ import { LuGithub } from 'react-icons/lu'
 import DarkModeComponent from './DarkMode'
 import MultilingualComponent from './Multilingual'
 import { Link } from 'react-scroll'
+import logoLight from '../assets/pic/logos/logo-light.png'
+import logoDark from '../assets/pic/logos/logo-dark.png'
+import { useContext } from 'react'
+import { MyContext } from '../contexts/app.context'
 
-const HeaderComponent = (props) => {
+const HeaderComponent = () => {
+    const { darkMode: theme } = useContext(MyContext)
+
     return (
         <nav className='fixed px-4 w-full z-20 top-0 start-0 border-b dark:border-none bg-slate-50 dark:bg-[#0B001C] shadow-md dark:shadow-[#131321]'>
             <div className='flex flex-wrap items-center justify-between mx-auto'>
                 {/* logo */}
                 <div className='flex items-center flex-shrink-0'>
                     <h2 className='font-mono text-3xl font-bold tracking-tight text-transparent bg-gradient-to-r from-emerald-600 via-slate-500 to-teal-700 bg-clip-text w-28'>
-                        NVP.
+                        <img
+                            src={theme === 'dark' ? logoLight : logoDark}
+                            alt='logo'
+                            width={50}
+                            className='rounded-sm cursor-pointer'
+                        />
                     </h2>
                 </div>
 
@@ -34,7 +45,7 @@ const HeaderComponent = (props) => {
                     </div>
 
                     <div className='flex items-center text-neutral-700 dark:text-neutral-300'>
-                        <DarkModeComponent darkMode={props.darkMode} theme={props.theme} />
+                        <DarkModeComponent />
                         <MultilingualComponent />
                     </div>
                 </div>
