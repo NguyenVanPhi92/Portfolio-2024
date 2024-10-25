@@ -1,0 +1,12 @@
+{
+    "navbar_translate": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "project": "Project",
+        "technologies": "Technologies",
+        "education": "Education",
+        "interest": "Interest",
+        "contact": "Contact"
+    }
+}

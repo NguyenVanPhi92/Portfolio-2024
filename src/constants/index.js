@@ -1,4 +1,5 @@
 import portfolioImg from '../assets/pic/projects/portfolio-img.png'
+import shopeeImg from '../assets/pic/projects/shopee.png'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`
 
@@ -31,25 +32,26 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
     // Nodejs Express
-    {
-        title: 'Twitter API',
-        link: 'https://shoppe-react-ts.vercel.app/',
-        demo: 'https://youtube.com',
-        pop_up: portfolioImg,
-        featureUser: [],
-        featureDev: [],
-        system: 'https://drawsql.app/',
-        figma: 'https://figma.com',
-        description:
-            'A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.',
-        technologies: []
-    },
+    // {
+    //     title: 'Twitter API',
+    //     link: 'https://shoppe-react-ts.vercel.app/',
+    //     demo: 'https://youtube.com',
+    //     pop_up: portfolioImg,
+    //     featureUser: [],
+    //     featureDev: [],
+    //     system: 'https://drawsql.app/',
+    //     figma: 'https://figma.com',
+    //     description:
+    //         'A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.',
+    //     technologies: []
+    // },
     // React/Next-js-ts
     {
         title: 'Shoppe Clone',
         link: 'https://shoppe-react-ts.vercel.app/',
         demo: 'https://youtube.com',
-        pop_up: portfolioImg,
+        git: 'https://github.com/NguyenVanPhi92/shoppe_react_ts',
+        pop_up: shopeeImg,
         featureUser: [
             'Authentication with JWT',
             'Login (email and password, google, phone)',
@@ -98,6 +100,7 @@ export const PROJECTS = [
         title: 'Portfolio Website',
         link: 'https://portfolio-2024-sepia-theta.vercel.app/',
         demo: 'https://youtube.com',
+        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
         pop_up: portfolioImg,
         description: [
             'Multiple language options, ',
@@ -129,45 +132,45 @@ export const PROJECTS = [
             'prettier',
             'vite'
         ]
-    },
-    {
-        title: 'Blogging Platform',
-        link: 'https://shoppe-react-ts.vercel.app/',
-        demo: 'https://youtube.com',
-        pop_up: portfolioImg,
-        featureUser: [
-            'Authentication with JWT',
-            'Login',
-            'Logout',
-            'Register',
-            'Multiple language options',
-            'Show detailed information blog',
-            'Management blog (pagination, sorting, filter, search input, search date)',
-            'Management post (create, edit, delete, update)'
-        ],
-        featureDev: [
-            'Management UI component',
-            'Format code according to regulations',
-            'Testing feature',
-            'Writing document'
-        ],
-        system: 'https://drawsql.app/',
-        figma: 'https://figma.com',
-        description:
-            'A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.',
-        technologies: [
-            'MUI 5',
-            'Next 11',
-            'Typescript',
-            'SWR',
-            'React Hook Form',
-            'Cookies',
-            'Axios',
-            'eslint',
-            'prettier',
-            'create next app'
-        ]
     }
+    // {
+    //     title: 'Blogging Platform',
+    //     link: 'https://shoppe-react-ts.vercel.app/',
+    //     demo: 'https://youtube.com',
+    //     pop_up: portfolioImg,
+    //     featureUser: [
+    //         'Authentication with JWT',
+    //         'Login',
+    //         'Logout',
+    //         'Register',
+    //         'Multiple language options',
+    //         'Show detailed information blog',
+    //         'Management blog (pagination, sorting, filter, search input, search date)',
+    //         'Management post (create, edit, delete, update)'
+    //     ],
+    //     featureDev: [
+    //         'Management UI component',
+    //         'Format code according to regulations',
+    //         'Testing feature',
+    //         'Writing document'
+    //     ],
+    //     system: 'https://drawsql.app/',
+    //     figma: 'https://figma.com',
+    //     description:
+    //         'A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.',
+    //     technologies: [
+    //         'MUI 5',
+    //         'Next 11',
+    //         'Typescript',
+    //         'SWR',
+    //         'React Hook Form',
+    //         'Cookies',
+    //         'Axios',
+    //         'eslint',
+    //         'prettier',
+    //         'create next app'
+    //     ]
+    // }
     // {
     //     title: 'Restaurant Management',
     //     link: 'https://shoppe-react-ts.vercel.app/',

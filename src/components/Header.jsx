@@ -97,22 +97,6 @@ const HeaderComponent = () => {
                                 offset={-120}
                                 duration={500}
                                 //   onSetActive={handleSetActive}
-                                to='technology'
-                                className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
-                                aria-current='pag'
-                            >
-                                Technologies
-                            </Link>
-                            <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
-                        </li>
-                        <li className='relative cursor-pointer group'>
-                            <Link
-                                activeClass='active'
-                                spy={true}
-                                smooth={true}
-                                offset={-120}
-                                duration={500}
-                                //   onSetActive={handleSetActive}
                                 to='experience'
                                 className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
                                 aria-current='pag'
@@ -137,6 +121,23 @@ const HeaderComponent = () => {
                             </Link>
                             <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
                         </li>
+                        <li className='relative cursor-pointer group'>
+                            <Link
+                                activeClass='active'
+                                spy={true}
+                                smooth={true}
+                                offset={-120}
+                                duration={500}
+                                //   onSetActive={handleSetActive}
+                                to='technology'
+                                className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
+                                aria-current='pag'
+                            >
+                                Technologies
+                            </Link>
+                            <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
+                        </li>
+
                         <li className='relative cursor-pointer group'>
                             <Link
                                 activeClass='active'

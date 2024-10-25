@@ -5,7 +5,7 @@ const EducationComponent = () => {
         <div id='education'>
             <TitleComponents title='Education' />
             <div
-                className='flex m-auto rounded-xl p-6 dark:border text-neutral-700 dark:text-neutral-300 dark:border-neutral-800 dark:bg-neutral-950 gap-10 mt-6 w-4/5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]
+                className='flex m-auto rounded-xl p-6 dark:border text-neutral-700 dark:text-neutral-300 dark:border-neutral-800 dark:bg-neutral-950 gap-10 mt-6 w-4/5 shadow-[rgba(0,_0,_0,_0.24)_0px_0.1px_2px]
              dark:shadow-inner'
             >
                 <div className='px-6 py-2 border-l border-neutral-800 dark:border-neutral-700'>
@@ -15,7 +15,17 @@ const EducationComponent = () => {
                         </div>
                         <p>9/2020 - 12/2022</p>
                         <h3 className='text-2xl font-bold'>SaiGon College</h3>
-                        <p>Computer Programming - GPA: 3.24</p>
+                        <p>
+                            <span>Computer Programming </span> -{' '}
+                            <a
+                                href='https://truongcaodangsaigon.edu.vn/'
+                                target='_blank'
+                                className='underline text-[14px] text-cyan-700 hover:text-cyan-600'
+                            >
+                                caodangsaigon
+                            </a>
+                        </p>
+                        <p>GPA: 3.24</p>
                     </div>
 
                     <div className='relative'>
@@ -28,6 +38,7 @@ const EducationComponent = () => {
                             <span>ReactJs Supper </span> -{' '}
                             <a
                                 href='https://duthanhduoc.com/'
+                                target='_blank'
                                 className='underline text-[14px] text-cyan-700 hover:text-cyan-600'
                             >
                                 duthanhduoc (Senior Frontend)
@@ -38,13 +49,14 @@ const EducationComponent = () => {
                             <span>React basic to advanced </span> -{' '}
                             <a
                                 href='https://evon.dev/'
+                                target='_blank'
                                 className='underline text-[14px] text-cyan-700 hover:text-cyan-600'
                             >
                                 evondev (Senior Frontend)
                             </a>
                         </p>
 
-                        <p>
+                        {/* <p>
                             <span>PHP Laravel</span> -{' '}
                             <a
                                 href='https://www.udemy.com/course/laravel-learning-management-system'
@@ -52,12 +64,13 @@ const EducationComponent = () => {
                             >
                                 Kazi-Ariyan
                             </a>
-                        </p>
+                        </p> */}
 
                         <p>
                             <span>Debugging Technique</span> -{' '}
                             <a
                                 href='https://hoidanit.vn/'
+                                target='_blank'
                                 className='underline text-[14px] text-cyan-700 hover:text-cyan-600'
                             >
                                 hoidanit
@@ -70,12 +83,13 @@ const EducationComponent = () => {
                     <div className='dark:bg-neutral-950 bg-white absolute p-2 text-2xl top-0 left-[-20px]'>
                         <LiaUniversitySolid className='text-2xl text-neutral-500' />
                     </div>
-                    <p>8/2024 - Present</p>
+                    <p>10/2024 - Present</p>
                     <h3 className='text-2xl font-bold'>English center</h3>
                     <p>
                         <span>Ielts Fighter</span> -{' '}
                         <a
-                            href='#'
+                            href='https://ielts-fighter.com/'
+                            target='_blank'
                             className='underline text-[14px] text-cyan-700 hover:text-cyan-600'
                         >
                             ielts-fighter.com

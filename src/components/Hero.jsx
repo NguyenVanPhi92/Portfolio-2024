@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { CiSaveDown2 } from 'react-icons/ci'
 import cv from '../assets/cv.pdf'
 import heroImg from '../assets/pic/hero/hero-img.png'
@@ -16,6 +17,8 @@ const container = (delay) => ({
 })
 
 const HeroComponent = () => {
+    const { t } = useTranslation('hero')
+
     return (
         <div className='pb-4 dark:border-b dark:border-neutral-900 lg:mb-36' id='home'>
             <div className='flex flex-wrap'>
@@ -28,7 +31,7 @@ const HeroComponent = () => {
                             className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-neutral-700 dark:text-neutral-400'
                         >
                             <span className='font-semibold tracking-tight text-transparent bg-gradient-to-r from-emerald-600 via-slate-500 to-teal-700 bg-clip-text'>
-                                Welcome.
+                                {t('hero_translate.title')}.
                             </span>{' '}
                             {/* Nguyen */}
                         </motion.h1>

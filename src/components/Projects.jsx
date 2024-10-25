@@ -2,20 +2,20 @@ import { PROJECTS } from '../constants'
 import TitleComponents from './Title'
 
 const ProjectsComponent = () => {
-    const handle = (items) => {
-        const arr = []
-        if (items.length <= 5) {
-            arr.push(items)
-        } else {
-            return
-        }
-    }
+    // const handle = (items) => {
+    //     const arr = []
+    //     if (items.length <= 5) {
+    //         arr.push(items)
+    //     } else {
+    //         return
+    //     }
+    // }
     return (
         <div className='pb-4 dark:border-b dark:border-neutral-900' id='projects'>
             <TitleComponents title='My' subTitle='Projects' />
 
             {/* V1 */}
-            {/* <div className='w-full'>
+            <div className='w-full'>
                 {PROJECTS.map((pj, index) => (
                     <div key={index} className='grid grid-flow-col mb-8'>
                         <div className='relative h-auto mx-auto overflow-hidden rounded-lg w-60 '>
@@ -24,7 +24,7 @@ const ProjectsComponent = () => {
                                 alt={pj.title}
                                 width={150}
                                 height={150}
-                                className='relative z-0 w-full h-48 transition-all duration-300 scale-110 rounded-lg cursor-pointer hover:scale-100'
+                                className='relative z-0 object-cover w-full h-48 transition-all duration-300 scale-110 rounded-lg cursor-pointer hover:scale-100'
                             />
                         </div>
 
@@ -48,13 +48,26 @@ const ProjectsComponent = () => {
                                     </span>
                                 ))}
                             </div>
+
+                            <p className='mt-4'>
+                                <span className='text-neutral-700 dark:text-neutral-400'>
+                                    Repo:{' '}
+                                </span>
+                                <a
+                                    href={pj.git}
+                                    target='_blank'
+                                    className='underline text-[14px] text-cyan-700 hover:text-cyan-600'
+                                >
+                                    {pj.git}
+                                </a>
+                            </p>
                         </div>
                     </div>
                 ))}
-            </div> */}
+            </div>
 
             {/* V2 */}
-            <div className='grid grid-cols-4 gap-4'>
+            {/* <div className='grid grid-cols-4 gap-4'>
                 {PROJECTS.map((pj, index) => (
                     <div key={index} className='overflow-hidden rounded shadow-lg'>
                         <img className='w-full' src={pj.pop_up} alt='Sunset in the mountains' />
@@ -85,9 +98,10 @@ const ProjectsComponent = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
 
-            <nav className='mt-4 text-center'>
+            {/* Pagination */}
+            {/* <nav className='mt-4 text-center'>
                 <ul className='inline-flex -space-x-px text-sm'>
                     <li>
                         <a
@@ -147,7 +161,7 @@ const ProjectsComponent = () => {
                         </a>
                     </li>
                 </ul>
-            </nav>
+            </nav> */}
         </div>
     )
 }
