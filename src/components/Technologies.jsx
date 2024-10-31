@@ -80,7 +80,7 @@ const TechnologiesComponent = () => {
                     </SwiperSlide>
 
                     <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
-                        <RiNextjsFill className='m-auto text-4xl text-slate-900' />
+                        <RiNextjsFill className='m-auto text-4xl text-slate-900 dark:text-white-100' />
                     </SwiperSlide>
 
                     <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
@@ -96,7 +96,7 @@ const TechnologiesComponent = () => {
                     </SwiperSlide>
 
                     <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
-                        <MdHttp className='m-auto text-4xl text-slate-900' />
+                        <MdHttp className='m-auto text-4xl text-slate-900 dark:text-white-100' />
                     </SwiperSlide>
 
                     <SwiperSlide className='py-4 border rounded-2xl w-max dark:border-neutral-800'>
@@ -111,7 +111,7 @@ const TechnologiesComponent = () => {
 
             <div className='flex items-center justify-center w-full gap-4'>
                 <VscVscode className='text-4xl text-cyan-600' />
-                <FaGithub className='text-4xl text-slate-700' />
+                <FaGithub className='text-4xl text-slate-700 dark:text-white-100' />
                 <SiPostman className='text-4xl text-orange-500' />
                 <FaGitAlt className='text-4xl text-amber-500' />
                 <CgFigma className='text-4xl text-rose-500' />

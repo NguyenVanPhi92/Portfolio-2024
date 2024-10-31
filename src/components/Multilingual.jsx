@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { GrLanguage } from 'react-icons/gr'
-import { LiaFlagUsaSolid } from 'react-icons/lia'
+// import { LiaFlagUsaSolid } from 'react-icons/lia'
 import { locales } from '../i18n/i18n'
 
 const MultilingualComponent = () => {
@@ -20,7 +20,11 @@ const MultilingualComponent = () => {
                 className='duration-300 cursor-pointer group hover:opacity-75'
                 onClick={() => setToggle((_) => !_)}
             />
-            {i18n.language === 'en' ? <LiaFlagUsaSolid /> : 'VN'}
+            {i18n.language === 'en' ? (
+                <span className='text-[12px]'>Eg</span>
+            ) : (
+                <span className='text-[12px]'>Vn</span>
+            )}
             {toggle && (
                 <ul className='absolute border shadow-md text-sm right-0 top-6 bg-white rounded-md dark:bg-[#272638] dark:border-slate-900'>
                     <li
