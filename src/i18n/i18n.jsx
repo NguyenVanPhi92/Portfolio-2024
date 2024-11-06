@@ -23,7 +23,7 @@ export const resources = {
 i18n.use(initReactI18next).init({
     resources,
     // default langue
-    lng: 'vi',
+    lng: 'en',
     ns: ['hero'], // cac namespace dung i18n
     fallbackLng: 'vi', // khi không xác định đc ngôn ngữ gì thì sẽ chuyển về ngôn ngữ vi
     // defaultNS, // set namespace default
