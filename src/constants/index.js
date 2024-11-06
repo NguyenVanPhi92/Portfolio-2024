@@ -75,7 +75,7 @@ export const PROJECTS = [
         system: 'https://drawsql.app/',
         figma: 'https://figma.com',
         description:
-            'An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.',
+            'A demo website showcasing basic features of an e-commerce platform, allowing you to shop from anywhere with just an internet connection.',
         technologies: [
             'HeadlessUI',
             'TailwindCss',
@@ -102,7 +102,7 @@ export const PROJECTS = [
         demo: 'https://youtube.com',
         git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
         pop_up: portfolioImg,
-        description: [
+        featureUser: [
             'Multiple language options, ',
             'Show detailed information client, ',
             'Multiple display modes, ',
@@ -117,8 +117,8 @@ export const PROJECTS = [
         ],
         system: 'https://drawsql.app/',
         figma: 'https://figma.com',
-        // description:
-        //     'A personal portfolio website showcasing projects, skills, and contact information.',
+        description:
+            'In the age of advancing technology, a personal website can help you stand out more to employers or clients.',
         technologies: [
             'React 18',
             'React motion',

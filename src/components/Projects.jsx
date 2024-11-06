@@ -56,7 +56,7 @@ const ProjectsComponent = () => {
                                 <a
                                     href={pj.git}
                                     target='_blank'
-                                    className='underline text-[14px] text-cyan-700 hover:text-cyan-600'
+                                    className='underline blur-sm hover:blur-none transition duration-300 text-[14px] text-cyan-800 '
                                 >
                                     {pj.git}
                                 </a>
