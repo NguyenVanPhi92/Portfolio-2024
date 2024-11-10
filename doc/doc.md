@@ -4,10 +4,6 @@ Website style: Single page application(One page)
 animation particles js
 
 task:
-create dark mode in contextAPI and change logo when dark mode change -> done
-create multiple language with i18n done
-crate global state & async with redux toolkit & redux thunk
 
-redux tutorial: https://www.youtube.com/watch?v=g_K1w8e0lLo&list=PLqQ6Lvascx2uB20Lgds_UUYCIsTYvworN
-
-bug render item null in file experience
+-   bug render item null in file experience
+-   create hook concept
