@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { CiSaveDown2 } from 'react-icons/ci'
-import cv from '../assets/cv.pdf'
 import heroImg from '../assets/pic/hero/hero-img.png'
+import { useState } from 'react'
+import Modal from './Modal'
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -18,6 +19,11 @@ const container = (delay) => ({
 
 const HeroComponent = () => {
     const { t } = useTranslation('hero')
+    const [isModalOpen, setIsModalOpen] = useState(false)
+    // const { nodeRef, setShow, show } = useClickOutSide()
+
+    const openModal = () => setIsModalOpen(true)
+    const closeModal = () => setIsModalOpen(false)
 
     return (
         <div className='pb-4 dark:border-b dark:border-neutral-900 lg:mb-36' id='home'>
@@ -53,14 +59,13 @@ const HeroComponent = () => {
                         </motion.p>
                     </div>
 
-                    <a
-                        href={cv}
-                        className='flex items-center gap-1 px-2 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-400 dark:bg-emerald-700 dark:hover:bg-emerald-600 text-neutral-100 dark:text-neutral-200 w-max'
-                        target='_blank'
+                    <button
+                        className='flex items-center gap-1 px-2 py-2 rounded-lg cursor-pointer bg-emerald-600 hover:bg-emerald-400 dark:bg-emerald-700 dark:hover:bg-emerald-600 text-neutral-100 dark:text-neutral-200 w-max'
+                        onClick={openModal}
                     >
                         Resume
                         <CiSaveDown2 />
-                    </a>
+                    </button>
                 </div>
 
                 <div className='w-full lg:w-1/2 lg:-8'>
@@ -76,6 +81,8 @@ const HeroComponent = () => {
                     </div>
                 </div>
             </div>
+
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
         </div>
     )
 }
