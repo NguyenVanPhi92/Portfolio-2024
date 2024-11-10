@@ -1,7 +1,13 @@
 {
-    "project_translate": {
-        "title": "",
-        "name": "",
-        "desc": ""
-    }
+    "project_translate": [
+        { "title": "My Projects" },
+        {
+            "name": "Shoppe Clone",
+            "desc": "A demo website showcasing basic features of an e-commerce platform, allowing you to shop from anywhere with just an internet connection."
+        },
+        {
+            "name": "Portfolio Website",
+            "desc": "In the age of advancing technology, a personal website can help you stand out more to employers or clients."
+        }
+    ]
 }

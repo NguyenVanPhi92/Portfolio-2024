@@ -49,11 +49,7 @@ const HeroComponent = () => {
                             animate='visible'
                             className='max-w-xl py-6 my-2 font-light tracking-tighter dark:text-neutral-300 text-neutral-700'
                         >
-                            I am a Frontend Developer who has recently entered the job market, with
-                            a focus on JavaScript and React a powerful framework for web development
-                            created by Meta. Since 2021, I have been studying and working
-                            extensively with ReactJS. Given my in-depth knowledge of this framework,
-                            I am confident that I can effectively meet your needs.
+                            {t('hero_translate.desc')}.
                         </motion.p>
                     </div>
 

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import Photo5 from '../assets/pic/interest/image.png'
 import Photo4 from '../assets/pic/interest/image1.png'
 import Photo6 from '../assets/pic/interest/party.png'
@@ -43,9 +44,11 @@ const CardsData = [
 ]
 
 const InterestComponent = () => {
+    const { t } = useTranslation('interest')
+
     return (
         <div className='text-center' id='interest'>
-            <TitleComponents title='Interest' />
+            <TitleComponents title={t('interest_translate.title')} />
 
             {/* cards section */}
             <div className='container mx-auto'>

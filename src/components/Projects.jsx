@@ -1,18 +1,39 @@
+import { useTranslation } from 'react-i18next'
 import { PROJECTS } from '../constants'
 import TitleComponents from './Title'
 
 const ProjectsComponent = () => {
-    // const handle = (items) => {
-    //     const arr = []
-    //     if (items.length <= 5) {
-    //         arr.push(items)
-    //     } else {
-    //         return
-    //     }
-    // }
+    const { t } = useTranslation('project')
+
     return (
         <div className='pb-4 dark:border-b dark:border-neutral-900' id='projects'>
-            <TitleComponents title='My' subTitle='Projects' />
+            <TitleComponents
+                title={t('project_translate', {
+                    returnObjects: true
+                }).map(
+                    (item) =>
+                        // item.title: 'My Projects' || 'Các Dự Án Của Tôi'
+                        item.title?.split(' ').length > 2
+                            ? // VI: lấy ra: các dự án
+                              item.title?.split(' ').slice(0, 3).toString().split(',').join(' ')
+                            : item.title?.split(' ')[0] // EN: lấy ra: My
+                )}
+                subTitle={t('project_translate', {
+                    returnObjects: true
+                }).map(
+                    (item) =>
+                        // item.title: 'My Projects' || 'Các Dự Án Của Tôi'
+                        item.title?.split(' ').length > 2
+                            ? // VI: lấy ra: của tôi
+                              item.title
+                                  ?.split(' ')
+                                  .slice(3, item.title?.split(' ').length)
+                                  .toString()
+                                  .split(',')
+                                  .join(' ')
+                            : item.title?.split(' ')[1] // EN: lấy ra: Projects
+                )}
+            />
 
             {/* V1 */}
             <div className='w-full'>

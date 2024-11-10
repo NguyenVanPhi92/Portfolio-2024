@@ -26,12 +26,19 @@ import 'swiper/css/pagination'
 import { MdHttp } from 'react-icons/md'
 import { Autoplay } from 'swiper/modules'
 import TitleComponents from './Title'
+import { useTranslation } from 'react-i18next'
 
 const TechnologiesComponent = () => {
+    const { t } = useTranslation('technologies')
+
     //slider
     return (
         <div className='pb-4 dark:border-b dark:border-neutral-900' id='technology'>
-            <TitleComponents title='Technologies & ' subTitle='Tools' />
+            <TitleComponents
+                // title='Technologies & '
+                title={t('technologies_translate.title')}
+                // subTitle='Tools'
+            />
 
             <Swiper
                 slidesPerView={8}

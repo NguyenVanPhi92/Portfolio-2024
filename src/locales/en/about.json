@@ -1,6 +1,6 @@
 {
     "about_translate": {
-        "title": "",
-        "desc": "I am a Frontend Developer who has recently entered the job market, with a focus on JavaScript and React a powerful framework for web development created by Meta. Since 2021, I have been studying and working extensively with ReactJS. Given my in-depth knowledge of this framework, I am confident that I can effectively meet your needs."
+        "title": "About Me",
+        "desc": "I started learning programming in 2020 at a college in Ho Chi Minh City, where I gained a lot of valuable knowledge about computer programming and software architecture models such as MVC and MVVM. I also acquired expertise in databases (SQL, NoSQL), websites (frontend client-side rendering (CSR) and backend server-side rendering (SSR)). After graduation, I completed an internship at a company in the finance tech sector, followed by another at a company specializing in B2B software solutions. Throughout my time at both companies, I accumulated a wealth of useful knowledge and hands-on experience. With a solid foundation and a burning passion to create specialized software, I am eager to contribute my skills and efforts to your project."
     }
 }

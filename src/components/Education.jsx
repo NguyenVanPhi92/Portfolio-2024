@@ -1,9 +1,11 @@
 import { LiaUniversitySolid } from 'react-icons/lia'
 import TitleComponents from './Title'
+import { useTranslation } from 'react-i18next'
 const EducationComponent = () => {
+    const { t } = useTranslation('education')
     return (
         <div id='education'>
-            <TitleComponents title='Education' />
+            <TitleComponents title={t('education_translate.title')} />
             <div
                 className='flex m-auto rounded-xl p-6 dark:border text-neutral-700 dark:text-neutral-300 dark:border-neutral-800 dark:bg-neutral-950 gap-10 mt-6 w-4/5 shadow-[rgba(0,_0,_0,_0.24)_0px_0.1px_2px]
              dark:shadow-inner'

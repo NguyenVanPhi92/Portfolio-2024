@@ -8,9 +8,11 @@ import logoLight from '../assets/pic/logos/logo-light.png'
 import logoDark from '../assets/pic/logos/logo-dark.png'
 import { useContext } from 'react'
 import { MyContext } from '../contexts/app.context'
+import { useTranslation } from 'react-i18next'
 
 const HeaderComponent = () => {
     const { darkMode: theme } = useContext(MyContext)
+    const { t } = useTranslation('navbar')
 
     return (
         <nav className='fixed px-4 w-full z-20 top-0 start-0 border-b dark:border-none bg-slate-50 dark:bg-[#0B001C] shadow-md dark:shadow-[#131321]'>
@@ -68,7 +70,7 @@ const HeaderComponent = () => {
                                 className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
                                 aria-current='pag'
                             >
-                                Home
+                                {t('navbar_translate.home')}
                             </Link>
                             <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
                         </li>
@@ -85,7 +87,7 @@ const HeaderComponent = () => {
                                 className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
                                 aria-current='pag'
                             >
-                                About
+                                {t('navbar_translate.about')}
                             </Link>
                             <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
                         </li>
@@ -101,7 +103,7 @@ const HeaderComponent = () => {
                                 className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
                                 aria-current='pag'
                             >
-                                Experience
+                                {t('navbar_translate.experience')}
                             </Link>
                             <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
                         </li>
@@ -117,7 +119,7 @@ const HeaderComponent = () => {
                                 className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
                                 aria-current='pag'
                             >
-                                Projects
+                                {t('navbar_translate.project')}
                             </Link>
                             <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
                         </li>
@@ -133,7 +135,7 @@ const HeaderComponent = () => {
                                 className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
                                 aria-current='pag'
                             >
-                                Technologies
+                                {t('navbar_translate.technologies')}
                             </Link>
                             <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
                         </li>
@@ -150,7 +152,7 @@ const HeaderComponent = () => {
                                 className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
                                 aria-current='pag'
                             >
-                                Education
+                                {t('navbar_translate.education')}
                             </Link>
                             <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
                         </li>
@@ -166,7 +168,7 @@ const HeaderComponent = () => {
                                 className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
                                 aria-current='pag'
                             >
-                                Interest
+                                {t('navbar_translate.interest')}
                             </Link>
                             <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
                         </li>
@@ -183,7 +185,7 @@ const HeaderComponent = () => {
                                 className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
                                 aria-current='pag'
                             >
-                                Contact
+                                {t('navbar_translate.contact')}
                             </Link>
                             <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
                         </li>

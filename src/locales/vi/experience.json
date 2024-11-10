@@ -1,7 +1,34 @@
 {
-    "experience_translate": {
-        "title": "",
-        "company_position": "",
-        "desc": ""
-    }
+    "experience_translate": [
+        { "title": "Kinh Nghiệm" },
+        {
+            "year": "2022",
+            "role": "Thực tập sinh Frontend",
+            "company": "Biz4 Group",
+            "description": "Trải nghiệm sản phẩm của công ty (web, ứng dụng fintech). Kiểm tra sản phẩm từ vị trí của người dùng. Tạo landing page cho công ty. Công nghệ sử dụng: HTML, SCSS, MUI, React Hook, React Hook Form, Yup, Resolvers, Axios, Typescript, Redux, Redux Toolkit,...",
+            "technologies": ["Javascript", "Typescript", "React.js", "MUI", "SCSS/SASS"]
+        },
+        {
+            "year": "2022 - 2023",
+            "role": "Lập trình viên Frontend (React/Next)",
+            "company": "Satavan",
+            "description": "Tham gia các dự án thương mại điện tử. Chịu trách nhiệm xác thực các biểu mẫu dữ liệu, hiển thị dữ liệu sản phẩm trên giao diện người dùng và thực hiện các chức năng như thêm và chỉnh sửa địa chỉ khách hàng.Công nghệ sử dụng: React, React Hook Form, Yup, Resolvers, Axios, Typescript, SWR,...Website: https://womart.vn",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "TailwindCSS",
+                "Typescript",
+                "React",
+                "Next",
+                "SWR"
+            ]
+        },
+        {
+            "year": "2023 - 2024",
+            "role": "Cộng tác viên",
+            "company": "Vietsing Global",
+            "description": "Thiết kế bài giảng cho giáo viên sử dụng PowerPoint, ActivInspire và các công cụ liên quan khác. Hỗ trợ giáo viên trong việc ghi lại bài giảng. Viết báo cáo tiến độ công việc. Thảo luận, bàn giao và báo cáo công việc cho nhóm và các thành viên trong đội."
+        }
+    ]
 }
