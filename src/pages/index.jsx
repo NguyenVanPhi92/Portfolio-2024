@@ -16,7 +16,18 @@ export default function MyPage() {
          * selection:text-cyan-300 selection:bg-cyan-300
          * click text auto blue
          */
-        <div className='overflow-hidden antialiased text-neutral-300 selection:text-white selection:bg-green-800'>
+
+        <div
+            onCopy={(e) => {
+                e.preventDefault()
+                alert('Không được sao chép văn bản này!')
+            }}
+            onDoubleClick={(e) => {
+                e.preventDefault()
+                alert('Không được sao chép văn bản này!')
+            }}
+            className='overflow-hidden antialiased select-none text-neutral-300 selection:text-white selection:bg-green-800'
+        >
             <div className='fixed top-0 w-full h-full -z-10'>
                 <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-[#0B001C] '></div>
                 {/* <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'></div> */}

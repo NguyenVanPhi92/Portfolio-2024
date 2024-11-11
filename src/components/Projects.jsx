@@ -1,12 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import { PROJECTS } from '../constants'
 import TitleComponents from './Title'
+import useLinkNewTab from '../hooks/useLinkNewTab'
 
 const ProjectsComponent = () => {
     const { t } = useTranslation('project')
+    const { contentRef } = useLinkNewTab()
 
     return (
-        <div className='pb-4 dark:border-b dark:border-neutral-900' id='projects'>
+        <div className='pb-4 dark:border-b dark:border-neutral-900' id='projects' ref={contentRef}>
             <TitleComponents
                 title={t('project_translate', {
                     returnObjects: true
@@ -76,7 +78,7 @@ const ProjectsComponent = () => {
                                 </span>
                                 <a
                                     href={pj.git}
-                                    target='_blank'
+                                    // target='_blank'
                                     className='underline blur-sm hover:blur-none transition duration-300 text-[14px] text-cyan-800 '
                                 >
                                     {pj.git}

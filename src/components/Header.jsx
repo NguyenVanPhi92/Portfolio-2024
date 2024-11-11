@@ -1,14 +1,14 @@
+import { useContext } from 'react'
+import { useTranslation } from 'react-i18next'
 import { BsTwitterX } from 'react-icons/bs'
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 import { LuGithub } from 'react-icons/lu'
+import { Link } from 'react-scroll'
+import logoDark from '../assets/pic/logos/logo-dark.png'
+import logoLight from '../assets/pic/logos/logo-light.png'
+import { MyContext } from '../contexts/app.context'
 import DarkModeComponent from './DarkMode'
 import MultilingualComponent from './Multilingual'
-import { Link } from 'react-scroll'
-import logoLight from '../assets/pic/logos/logo-light.png'
-import logoDark from '../assets/pic/logos/logo-dark.png'
-import { useContext } from 'react'
-import { MyContext } from '../contexts/app.context'
-import { useTranslation } from 'react-i18next'
 
 const HeaderComponent = () => {
     const { darkMode: theme } = useContext(MyContext)
