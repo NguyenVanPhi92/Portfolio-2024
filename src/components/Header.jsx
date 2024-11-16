@@ -15,7 +15,7 @@ const HeaderComponent = () => {
     const { t } = useTranslation('navbar')
 
     return (
-        <nav className='fixed px-4 w-full z-20 top-0 start-0 border-b dark:border-none bg-slate-50 dark:bg-[#0B001C] shadow-md dark:shadow-[#131321]'>
+        <nav className='px-4 w-full z-20 top-0 start-0 border-b dark:border-none bg-slate-50 dark:bg-[#0B001C] shadow-md dark:shadow-[#131321]'>
             <div className='flex flex-wrap items-center justify-between mx-auto'>
                 {/* logo */}
                 <div className='flex items-center flex-shrink-0'>

@@ -4,6 +4,8 @@ import { CiSaveDown2 } from 'react-icons/ci'
 import heroImg from '../assets/pic/hero/hero-img.png'
 import { useState } from 'react'
 import Modal from './Modal'
+import cv_en from '../assets/cv/cv_en.pdf'
+import cv_vi from '../assets/cv/cv_vi.pdf'
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -19,11 +21,7 @@ const container = (delay) => ({
 
 const HeroComponent = () => {
     const { t } = useTranslation('hero')
-    const [isModalOpen, setIsModalOpen] = useState(false)
-    // const { nodeRef, setShow, show } = useClickOutSide()
-
-    const openModal = () => setIsModalOpen(true)
-    const closeModal = () => setIsModalOpen(false)
+    const [open, setOpen] = useState(false)
 
     return (
         <div className='pb-4 dark:border-b dark:border-neutral-900 lg:mb-36' id='home'>
@@ -59,13 +57,16 @@ const HeroComponent = () => {
                         </motion.p>
                     </div>
 
-                    <button
+                    <motion.button
+                        initial={{ x: -100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.6 }}
                         className='flex items-center gap-1 px-2 py-2 rounded-lg cursor-pointer bg-emerald-600 hover:bg-emerald-400 dark:bg-emerald-700 dark:hover:bg-emerald-600 text-neutral-100 dark:text-neutral-200 w-max'
-                        onClick={openModal}
+                        onClick={() => setOpen(true)}
                     >
                         Resume
                         <CiSaveDown2 />
-                    </button>
+                    </motion.button>
                 </div>
 
                 <div className='w-full lg:w-1/2 lg:-8'>
@@ -82,7 +83,33 @@ const HeroComponent = () => {
                 </div>
             </div>
 
-            <Modal isOpen={isModalOpen} onClose={closeModal} />
+            <Modal open={open} onClose={() => setOpen(false)}>
+                <div className='w-48 mx-auto my-4'>
+                    <h3 className='text-lg font-semibold text-center text-gray-800'>
+                        Chọn CV để xem
+                    </h3>
+
+                    {/* CV */}
+                    <div className='flex justify-center my-8'>
+                        <a
+                            target='_blank'
+                            href={cv_en}
+                            onClick={() => setOpen(false)}
+                            className='px-4 py-2 mr-2 text-black bg-gray-300 rounded-lg hover:bg-gray-400'
+                        >
+                            English
+                        </a>
+                        <a
+                            target='_blank'
+                            href={cv_vi}
+                            onClick={() => setOpen(false)}
+                            className='px-4 py-2 text-white rounded-lg bg-emerald-600 hover:bg-emerald-400 dark:bg-emerald-700'
+                        >
+                            Vietnamese
+                        </a>
+                    </div>
+                </div>
+            </Modal>
         </div>
     )
 }

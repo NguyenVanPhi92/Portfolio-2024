@@ -1,32 +1,54 @@
-import cv_en from '../assets/cv/cv_en.pdf'
-import cv_vi from '../assets/cv/cv_vi.pdf'
+import clsx from 'clsx'
+import { useEffect } from 'react'
+import { MdOutlineClose } from 'react-icons/md'
 
-const Modal = ({ isOpen, onClose }) => {
-    if (!isOpen) return null
+const Modal = ({ open, onClose, children }) => {
+    // handle block scroll user
+    useEffect(() => {
+        const handleScroll = (event) => {
+            event.preventDefault()
+        }
+
+        if (open) {
+            window.addEventListener('wheel', handleScroll, { passive: false })
+            window.addEventListener('touchmove', handleScroll, { passive: false })
+        } else {
+            window.removeEventListener('wheel', handleScroll)
+            window.removeEventListener('touchmove', handleScroll)
+        }
+
+        return () => {
+            window.removeEventListener('wheel', handleScroll)
+            window.removeEventListener('touchmove', handleScroll)
+        }
+    }, [open])
 
     return (
         <>
-            {/* Modal */}
-            <div className='fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50'>
-                <div className='w-full max-w-lg p-6 bg-white rounded-lg shadow-lg'>
-                    <div className='flex justify-center my-8'>
-                        <a
-                            onClick={onClose}
-                            target='_blank'
-                            href={cv_en}
-                            className='px-4 py-2 mr-2 text-black bg-gray-300 rounded-lg hover:bg-gray-400'
-                        >
-                            CV English
-                        </a>
-                        <a
-                            onClick={onClose}
-                            target='_blank'
-                            href={cv_vi}
-                            className='px-4 py-2 text-white rounded-lg bg-emerald-600 hover:bg-emerald-400 dark:bg-emerald-700'
-                        >
-                            CV Vietnamese
-                        </a>
-                    </div>
+            <div
+                onClick={onClose}
+                className={clsx(
+                    'fixed inset-0 flex justify-center items-center transition-colors ',
+                    open && 'visible bg-black/20',
+                    !open && 'invisible'
+                )}
+            >
+                {/* modal */}
+                <div
+                    onClick={(e) => e.stopPropagation()}
+                    className={clsx(
+                        'bg-white rounded-xl shadow py-4 px-10 transition-all ',
+                        open && 'scale-100 opacity-100',
+                        !open && 'scale-125 opacity-0'
+                    )}
+                >
+                    <button
+                        onClick={onClose}
+                        className='absolute p-2 text-gray-400 bg-white rounded-lg top-2 right-2 hover:bg-gray-50 hover:text-gray-600'
+                    >
+                        <MdOutlineClose />
+                    </button>
+                    {children}
                 </div>
             </div>
         </>

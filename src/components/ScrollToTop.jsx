@@ -7,7 +7,7 @@ const ScrollToTop = () => {
             activeClass='active'
             spy={true}
             smooth={true}
-            offset={-120}
+            offset={-220}
             duration={500}
             //   onSetActive={handleSetActive}
             to='home'

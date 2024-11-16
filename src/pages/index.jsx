@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import AboutComponent from '../components/About'
 import ContactComponent from '../components/Contact'
 import EducationComponent from '../components/Education'
@@ -9,8 +10,15 @@ import ProjectsComponent from '../components/Projects'
 import ScrollToTop from '../components/ScrollToTop'
 import TechnologiesComponent from '../components/Technologies'
 import TheEndComponent from '../components/TheEnd'
+import { motion, useScroll, useSpring } from 'framer-motion'
 
 export default function MyPage() {
+    const { scrollYProgress } = useScroll()
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    })
     return (
         /**
          * selection:text-cyan-300 selection:bg-cyan-300
@@ -28,10 +36,19 @@ export default function MyPage() {
             }}
             className='overflow-hidden antialiased select-none text-neutral-300 selection:text-white selection:bg-green-800'
         >
+            {/* background web */}
             <div className='fixed top-0 w-full h-full -z-10'>
                 <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-[#0B001C] '></div>
-                {/* <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'></div> */}
             </div>
+
+            {/* animation progress */}
+            <motion.div
+                className='fixed top-0 left-0 right-0 z-30 h-1 bg-emerald-600 dark:bg-emerald-800'
+                style={{
+                    scaleX,
+                    transformOrigin: '0%'
+                }}
+            />
 
             <div className='mb-40'>
                 <HeaderComponent />
