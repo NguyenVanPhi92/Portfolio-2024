@@ -1,5 +1,7 @@
 import portfolioImg from '../assets/pic/projects/portfolio-img.png'
 import shopeeImg from '../assets/pic/projects/shopee.png'
+import gamexstudio from '../assets/pic/projects/gamexstudio.png'
+import hayday from '../assets/pic/projects/heyday.png'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`
 
@@ -127,6 +129,74 @@ export const PROJECTS = [
             'Tailwind 3',
             'Axios',
             'i18n',
+            'Swiperjs',
+            'eslint',
+            'prettier',
+            'vite'
+        ]
+    },
+    {
+        title: 'Games X Studio',
+        link: 'https://portfolio-2024-sepia-theta.vercel.app/',
+        demo: 'https://youtube.com',
+        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+        pop_up: gamexstudio,
+        featureUser: [
+            'Multiple language options, ',
+            'Show detailed information client, ',
+            'Multiple display modes, ',
+            'User-friendly UI.',
+            'Single page application(One page)'
+        ],
+        featureDev: [
+            'Management UI component',
+            'Format code according to regulations',
+            'Testing feature',
+            'Writing document'
+        ],
+        system: 'https://drawsql.app/',
+        figma: 'https://www.figma.com/design/KrR3NfHoodhIwsWIgCGuMC/GameXStudio?node-id=0-1&node-type=canvas&t=zuj7mow2F9oQZzNk-0',
+        description: 'Lading page web công ty',
+        technologies: [
+            'React 18',
+            'Next.js 15',
+            'React motion',
+            'React-scroll',
+            'Tailwind 3',
+            'Swiperjs',
+            'eslint',
+            'prettier',
+            'vite'
+        ]
+    },
+    {
+        title: 'Hayday Lading page',
+        link: 'https://portfolio-2024-sepia-theta.vercel.app/',
+        demo: 'https://youtube.com',
+        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+        pop_up: hayday,
+        featureUser: [
+            'Multiple language options, ',
+            'Show detailed information client, ',
+            'Multiple display modes, ',
+            'User-friendly UI.',
+            'Single page application(One page)'
+        ],
+        featureDev: [
+            'Management UI component',
+            'Format code according to regulations',
+            'Testing feature',
+            'Writing document'
+        ],
+        system: 'https://drawsql.app/',
+        figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
+        description: 'Lading page web công ty',
+        technologies: [
+            'React 18',
+            'Next.js 15',
+            'React motion',
+            'React-scroll',
+            'Tailwind 3',
             'Swiperjs',
             'eslint',
             'prettier',

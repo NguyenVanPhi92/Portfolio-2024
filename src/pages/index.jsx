@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import AboutComponent from '../components/About'
 import ContactComponent from '../components/Contact'
 import EducationComponent from '../components/Education'
@@ -10,7 +10,6 @@ import ProjectsComponent from '../components/Projects'
 import ScrollToTop from '../components/ScrollToTop'
 import TechnologiesComponent from '../components/Technologies'
 import TheEndComponent from '../components/TheEnd'
-import { motion, useScroll, useSpring } from 'framer-motion'
 
 export default function MyPage() {
     const { scrollYProgress } = useScroll()

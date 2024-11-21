@@ -3,6 +3,11 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     darkMode: 'class',
     theme: {
+        fontFamily: {
+            // inter: ['Inter-VariableFont_opsz,wght']
+            roboto: ['Roboto', 'sans-serif'],
+            inter: ['Inter', 'sans-serif']
+        },
         extend: {
             colors: {
                 // white: 'text-neutral-300'
