@@ -1,10 +1,11 @@
 import portfolioImg from '../assets/pic/projects/portfolio-img.png'
 import shopeeImg from '../assets/pic/projects/shopee.png'
 import gamexstudio from '../assets/pic/projects/gamexstudio.png'
-import hayday from '../assets/pic/projects/heyday.png'
+import heyday from '../assets/pic/projects/heyday.png'
 import restaurant from '../assets/pic/projects/restaurant.png'
 import lms from '../assets/pic/projects/lms.png'
 import social from '../assets/pic/projects/social.png'
+import tanngo from '../assets/pic/projects/tanngo.png'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`
 
@@ -140,7 +141,7 @@ export const PROJECTS = [
     },
     {
         title: 'Games X Studio',
-        link: 'https://portfolio-2024-sepia-theta.vercel.app/',
+        link: 'https://gamexstudio.com',
         demo: 'https://youtube.com',
         git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
         pop_up: gamexstudio,
@@ -173,11 +174,11 @@ export const PROJECTS = [
         ]
     },
     {
-        title: 'Hayday Lading page',
-        link: 'https://portfolio-2024-sepia-theta.vercel.app/',
+        title: 'Heyday Lading page',
+        link: 'https://heyday.game/',
         demo: 'https://youtube.com',
         git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
-        pop_up: hayday,
+        pop_up: heyday,
         featureUser: [
             'Multiple language options, ',
             'Show detailed information client, ',
@@ -205,6 +206,30 @@ export const PROJECTS = [
             'prettier',
             'vite'
         ]
+    },
+    {
+        title: 'Tanngo',
+        link: 'https://heyday.game/',
+        demo: 'https://youtube.com',
+        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+        pop_up: tanngo,
+        featureUser: [
+            'Multiple language options, ',
+            'Show detailed information client, ',
+            'Multiple display modes, ',
+            'User-friendly UI.',
+            'Single page application(One page)'
+        ],
+        featureDev: [
+            'Management UI component',
+            'Format code according to regulations',
+            'Testing feature',
+            'Writing document'
+        ],
+        system: 'https://drawsql.app/',
+        figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
+        description: 'Lading page web công ty',
+        technologies: ['React 18', 'Tailwind 3', 'eslint', 'prettier', 'vite']
     },
     {
         title: 'Restaurant Manage',
@@ -275,6 +300,7 @@ export const PROJECTS = [
         link: 'https://portfolio-2024-sepia-theta.vercel.app/',
         demo: 'https://youtube.com',
         git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+        api: 'https://api.holetex.com/v1/we-connect/api-docs/',
         pop_up: social,
         featureUser: [
             'Multiple language options, ',
@@ -289,9 +315,9 @@ export const PROJECTS = [
             'Testing feature',
             'Writing document'
         ],
-        system: 'https://drawsql.app/',
-        figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
-        description: 'Lading page web công ty',
+        systemERD: 'https://drawsql.app/',
+        figma: 'https://www.figma.com/design/ww5QRFK9eUhy9389OheoV0/We-Connect-App?node-id=0-1&node-type=CANVAS&t=MZfpz1tHmgAuadc8-0',
+        description: 'Mạng xã hội kết nối mọi người',
         technologies: [
             'React 18',
             'Next.js 15',
