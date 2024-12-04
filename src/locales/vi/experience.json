@@ -29,6 +29,24 @@
             "role": "Cộng tác viên",
             "company": "Vietsing Global",
             "description": "Thiết kế bài giảng cho giáo viên sử dụng PowerPoint, ActivInspire và các công cụ liên quan khác. Hỗ trợ giáo viên trong việc ghi lại bài giảng. Viết báo cáo tiến độ công việc. Thảo luận, bàn giao và báo cáo công việc cho nhóm và các thành viên trong đội."
+        },
+        {
+            "year": "9/2024 -> 2/2025",
+            "role": "Frontend Develop(React/Next)",
+            "company": "Ebizworld",
+            "description": "Tham gia du an, gamexstudio, heyday, tanngo",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "TailwindCSS",
+                "Typescript",
+                "React",
+                "Next",
+                "Redux toolkit",
+                "Tanstack query"
+            ],
+            "tool": "Trello, gitlab, slack, vscode, skype"
         }
     ]
 }

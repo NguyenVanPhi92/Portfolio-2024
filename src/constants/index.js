@@ -2,6 +2,9 @@ import portfolioImg from '../assets/pic/projects/portfolio-img.png'
 import shopeeImg from '../assets/pic/projects/shopee.png'
 import gamexstudio from '../assets/pic/projects/gamexstudio.png'
 import hayday from '../assets/pic/projects/heyday.png'
+import restaurant from '../assets/pic/projects/restaurant.png'
+import lms from '../assets/pic/projects/lms.png'
+import social from '../assets/pic/projects/social.png'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`
 
@@ -202,47 +205,105 @@ export const PROJECTS = [
             'prettier',
             'vite'
         ]
+    },
+    {
+        title: 'Restaurant Manage',
+        link: 'https://portfolio-2024-sepia-theta.vercel.app/',
+        demo: 'https://youtube.com',
+        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+        pop_up: restaurant,
+        featureUser: [
+            'Multiple language options, ',
+            'Show detailed information client, ',
+            'Multiple display modes, ',
+            'User-friendly UI.',
+            'Single page application(One page)'
+        ],
+        featureDev: [
+            'Management UI component',
+            'Format code according to regulations',
+            'Testing feature',
+            'Writing document'
+        ],
+        system: 'https://drawsql.app/',
+        figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
+        description: 'Lading page web công ty',
+        technologies: [
+            'React 18',
+            'Next.js 15',
+            'Tailwind 3',
+            'ShadnUI',
+            'eslint',
+            'prettier',
+            'vite'
+        ]
+    },
+    {
+        title: 'E-learning management',
+        link: 'https://portfolio-2024-sepia-theta.vercel.app/',
+        demo: 'https://youtube.com',
+        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+        pop_up: lms,
+        featureUser: [
+            'Multiple language options, ',
+            'Show detailed information client, ',
+            'Multiple display modes, ',
+            'User-friendly UI.',
+            'Single page application(One page)'
+        ],
+        featureDev: [
+            'Management UI component',
+            'Format code according to regulations',
+            'Testing feature',
+            'Writing document'
+        ],
+        system: 'https://drawsql.app/',
+        figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
+        description: 'Lading page web công ty',
+        technologies: [
+            'React 18',
+            'Next.js 15',
+            'Tailwind 3',
+            'ShadnUI',
+            'eslint',
+            'prettier',
+            'vite'
+        ]
+    },
+    {
+        title: 'Social Media',
+        link: 'https://portfolio-2024-sepia-theta.vercel.app/',
+        demo: 'https://youtube.com',
+        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+        pop_up: social,
+        featureUser: [
+            'Multiple language options, ',
+            'Show detailed information client, ',
+            'Multiple display modes, ',
+            'User-friendly UI.',
+            'Single page application(One page)'
+        ],
+        featureDev: [
+            'Management UI component',
+            'Format code according to regulations',
+            'Testing feature',
+            'Writing document'
+        ],
+        system: 'https://drawsql.app/',
+        figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
+        description: 'Lading page web công ty',
+        technologies: [
+            'React 18',
+            'Next.js 15',
+            'Tailwind 3',
+            'ShadnUI',
+            'eslint',
+            'prettier',
+            'vite'
+        ]
     }
     // {
     //     title: 'Blogging Platform',
-    //     link: 'https://shoppe-react-ts.vercel.app/',
-    //     demo: 'https://youtube.com',
-    //     pop_up: portfolioImg,
-    //     featureUser: [
-    //         'Authentication with JWT',
-    //         'Login',
-    //         'Logout',
-    //         'Register',
-    //         'Multiple language options',
-    //         'Show detailed information blog',
-    //         'Management blog (pagination, sorting, filter, search input, search date)',
-    //         'Management post (create, edit, delete, update)'
-    //     ],
-    //     featureDev: [
-    //         'Management UI component',
-    //         'Format code according to regulations',
-    //         'Testing feature',
-    //         'Writing document'
-    //     ],
-    //     system: 'https://drawsql.app/',
-    //     figma: 'https://figma.com',
-    //     description:
-    //         'A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.',
-    //     technologies: [
-    //         'MUI 5',
-    //         'Next 11',
-    //         'Typescript',
-    //         'SWR',
-    //         'React Hook Form',
-    //         'Cookies',
-    //         'Axios',
-    //         'eslint',
-    //         'prettier',
-    //         'create next app'
-    //     ]
-    // }
-    // {
-    //     title: 'Restaurant Management',
     //     link: 'https://shoppe-react-ts.vercel.app/',
     //     demo: 'https://youtube.com',
     //     pop_up: portfolioImg,
