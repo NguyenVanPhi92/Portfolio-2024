@@ -6,6 +6,8 @@ import restaurant from '../assets/pic/projects/restaurant.png'
 import lms from '../assets/pic/projects/lms.png'
 import social from '../assets/pic/projects/social.png'
 import tanngo from '../assets/pic/projects/tanngo.png'
+import blogs from '../assets/pic/projects/blogs.png'
+import jobs_company from '../assets/pic/projects/jobs_company.png'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`
 
@@ -52,6 +54,104 @@ export const PROJECTS = [
     //     technologies: []
     // },
     // React/Next-js-ts
+    {
+        title: 'Blogs Dev',
+        link: 'https://shoppe-react-ts.vercel.app/',
+        demo: 'https://youtube.com',
+        git: 'https://github.com/NguyenVanPhi92/shoppe_react_ts',
+        pop_up: blogs,
+        featureUser: [
+            'Authentication with JWT',
+            'Login (email and password, google, phone)',
+            'Logout',
+            'Register',
+            'Multiple language options',
+            'Show detailed information user and product',
+            'Management product (pagination, sorting, filter, search)',
+            'Management product cart(buy and update cart)',
+            'Management user(info, avatar, password, view order status, update)',
+            'Tối ưu performance với kỹ thuật lazy load vào page nào load page đó '
+        ],
+        featureDev: [
+            'Management UI component',
+            'Format code according to regulations',
+            'Testing feature',
+            'Document component for member',
+            'Writing document',
+            'ErrorBoundary: debug UI react when error component'
+        ],
+        system: 'https://drawsql.app/',
+        figma: 'https://figma.com',
+        description: 'My blogs.',
+        technologies: [
+            'HeadlessUI',
+            'TailwindCss',
+            'TypeScript',
+            'React 18',
+            'React Hook Form',
+            'React Router',
+            'React Helmet',
+            'Tanstack',
+            'Axios',
+            'i18next',
+            'Firebase',
+            'RestfullApi',
+            'Storybook',
+            'Unit Test',
+            'eslint',
+            'prettier',
+            'vite'
+        ]
+    },
+    {
+        title: 'Company Jobs',
+        link: 'https://github.com/vatsalsinghkv/remotive-jobs',
+        demo: 'https://youtube.com',
+        git: 'https://github.com/vatsalsinghkv/remotive-jobs',
+        pop_up: jobs_company,
+        featureUser: [
+            'Authentication with JWT',
+            'Login (email and password, google, phone)',
+            'Logout',
+            'Register',
+            'Multiple language options',
+            'Show detailed information user and product',
+            'Management product (pagination, sorting, filter, search)',
+            'Management product cart(buy and update cart)',
+            'Management user(info, avatar, password, view order status, update)',
+            'Tối ưu performance với kỹ thuật lazy load vào page nào load page đó '
+        ],
+        featureDev: [
+            'Management UI component',
+            'Format code according to regulations',
+            'Testing feature',
+            'Document component for member',
+            'Writing document',
+            'ErrorBoundary: debug UI react when error component'
+        ],
+        system: 'https://drawsql.app/',
+        figma: 'https://figma.com',
+        description: 'Search jobs.',
+        technologies: [
+            'HeadlessUI',
+            'TailwindCss',
+            'TypeScript',
+            'React 18',
+            'React Hook Form',
+            'React Router',
+            'React Helmet',
+            'Tanstack',
+            'Axios',
+            'i18next',
+            'Firebase',
+            'RestfullApi',
+            'Storybook',
+            'Unit Test',
+            'eslint',
+            'prettier',
+            'vite'
+        ]
+    },
     {
         title: 'Shoppe Clone',
         link: 'https://shoppe-react-ts.vercel.app/',
@@ -328,44 +428,6 @@ export const PROJECTS = [
             'vite'
         ]
     }
-    // {
-    //     title: 'Blogging Platform',
-    //     link: 'https://shoppe-react-ts.vercel.app/',
-    //     demo: 'https://youtube.com',
-    //     pop_up: portfolioImg,
-    //     featureUser: [
-    //         'Authentication with JWT',
-    //         'Login',
-    //         'Logout',
-    //         'Register',
-    //         'Multiple language options',
-    //         'Show detailed information blog',
-    //         'Management blog (pagination, sorting, filter, search input, search date)',
-    //         'Management post (create, edit, delete, update)'
-    //     ],
-    //     featureDev: [
-    //         'Management UI component',
-    //         'Format code according to regulations',
-    //         'Testing feature',
-    //         'Writing document'
-    //     ],
-    //     system: 'https://drawsql.app/',
-    //     figma: 'https://figma.com',
-    //     description:
-    //         'A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.',
-    //     technologies: [
-    //         'MUI 5',
-    //         'Next 11',
-    //         'Typescript',
-    //         'SWR',
-    //         'React Hook Form',
-    //         'Cookies',
-    //         'Axios',
-    //         'eslint',
-    //         'prettier',
-    //         'create next app'
-    //     ]
-    // }
 
     // // Javascript vanilla
     // {
