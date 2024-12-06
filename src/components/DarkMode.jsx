@@ -8,12 +8,12 @@ const DarkModeComponent = () => {
     const handleThemeSwitch = () => {
         if (theme === 'dark') {
             dispatch({ type: 'DARK_MODE', payload: 'light' })
-            document.documentElement.classList.add('dark')
-            document.documentElement.classList.remove('light')
-        } else {
-            dispatch({ type: 'DARK_MODE', payload: 'dark' })
             document.documentElement.classList.add('light')
             document.documentElement.classList.remove('dark')
+        } else {
+            dispatch({ type: 'DARK_MODE', payload: 'dark' })
+            document.documentElement.classList.add('dark')
+            document.documentElement.classList.remove('light')
         }
     }
 

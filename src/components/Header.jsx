@@ -14,6 +14,8 @@ const HeaderComponent = () => {
     const { darkMode: theme } = useContext(MyContext)
     const { t } = useTranslation('navbar')
 
+    console.log('them ', theme)
+
     return (
         <nav className='px-4 w-full z-20 top-0 start-0 border-b dark:border-none bg-slate-50 dark:bg-[#0B001C] shadow-md dark:shadow-[#131321]'>
             <div className='flex flex-wrap items-center justify-between mx-auto'>
@@ -21,7 +23,7 @@ const HeaderComponent = () => {
                 <div className='flex items-center flex-shrink-0'>
                     <h2 className='font-mono text-3xl font-bold tracking-tight text-transparent bg-gradient-to-r from-emerald-600 via-slate-500 to-teal-700 bg-clip-text w-28'>
                         <img
-                            src={theme === 'dark' ? logoLight : logoDark}
+                            src={theme === 'dark' ? logoDark : logoLight}
                             alt='logo'
                             width={50}
                             className='rounded-sm cursor-pointer'

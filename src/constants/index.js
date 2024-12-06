@@ -9,35 +9,6 @@ import tanngo from '../assets/pic/projects/tanngo.png'
 import blogs from '../assets/pic/projects/blogs.png'
 import jobs_company from '../assets/pic/projects/jobs_company.png'
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`
-
-export const ABOUT_TEXT = `I started learning programming in 2020 at a college in Ho Chi Minh City, where I gained a lot of valuable knowledge about computer programming and software architecture models such as MVC and MVVM. I also acquired expertise in databases (SQL, NoSQL), websites (frontend client-side rendering (CSR) and backend server-side rendering (SSR)). After graduation, I completed an internship at a company in the finance tech sector, followed by another at a company specializing in B2B software solutions. Throughout my time at both companies, I accumulated a wealth of useful knowledge and hands-on experience. With a solid foundation and a burning passion to create specialized software, I am eager to contribute my skills and efforts to your project.`
-
-export const EXPERIENCES = [
-    {
-        year: '2022',
-        role: 'Intern React Developer',
-        company: 'Biz4 Group.',
-        description: `Experience the company's products (web, fintech applications). In case of checking sp at user location. Make a landing page for the company. Technologies used: HTML, SCSS, MUI, React Hook, React Hook Form, Yup, Resolvers, Axios, Typescript, Redux, Redux Toolkit,...`,
-        technologies: ['Javascript', 'Typescript', 'React.js', 'MUI', 'SCSS/SASS']
-    },
-    {
-        year: '2022 - 2023',
-        role: 'Frontend Developer (React/Next)',
-        company: 'Satavan',
-        description: `Participate in e-commerce projects for various companies. Responsible for validating data forms, displaying product data on the UI, and performing functions such as adding and editing customer addresses. Technologies used: React, React Hook Form, Yup, Resolvers, Axios, Typescript, SWR,... Website: https://womart.vn `,
-        technologies: ['HTML', 'CSS', 'SCSS', 'TailwindCSS', 'Typescript', 'React', 'Next', 'SWR']
-    },
-    {
-        year: '2023 - 2024',
-        role: 'Collaborator',
-        company: 'Vietsing Global',
-        description: `Design lessons for teachers using PowerPoint, ActivInspire, and other relevant tools. Support teachers in recording lectures. Write progress reports on work. Discuss, hand over, and report work to the team and team.
-`,
-        technologies: []
-    }
-]
-
 export const PROJECTS = [
     // Nodejs Express
     // {
@@ -621,7 +592,7 @@ export const CONTACT = {
     email: 'nguyenvanphi.fi@gmail.com'
 }
 
-export const Action_REDUCER = {
+export const ACTION_REDUCER = {
     DARK_MODE: 'DARK_MODE',
     GET_TOKEN: 'GET_TOKEN',
     GET_USER: 'GET_USER'
