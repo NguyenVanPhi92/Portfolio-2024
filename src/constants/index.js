@@ -210,98 +210,98 @@ export const PROJECTS = [
             'vite'
         ]
     },
-    {
-        title: 'Games X Studio',
-        link: 'https://gamexstudio.com',
-        demo: 'https://youtube.com',
-        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
-        pop_up: gamexstudio,
-        featureUser: [
-            'Multiple language options, ',
-            'Show detailed information client, ',
-            'Multiple display modes, ',
-            'User-friendly UI.',
-            'Single page application(One page)'
-        ],
-        featureDev: [
-            'Management UI component',
-            'Format code according to regulations',
-            'Testing feature',
-            'Writing document'
-        ],
-        system: 'https://drawsql.app/',
-        figma: 'https://www.figma.com/design/KrR3NfHoodhIwsWIgCGuMC/GameXStudio?node-id=0-1&node-type=canvas&t=zuj7mow2F9oQZzNk-0',
-        description: 'Lading page web công ty',
-        technologies: [
-            'React 18',
-            'Next.js 15',
-            'React motion',
-            'React-scroll',
-            'Tailwind 3',
-            'Swiperjs',
-            'eslint',
-            'prettier',
-            'vite'
-        ]
-    },
-    {
-        title: 'Heyday Lading page',
-        link: 'https://heyday.game/',
-        demo: 'https://youtube.com',
-        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
-        pop_up: heyday,
-        featureUser: [
-            'Multiple language options, ',
-            'Show detailed information client, ',
-            'Multiple display modes, ',
-            'User-friendly UI.',
-            'Single page application(One page)'
-        ],
-        featureDev: [
-            'Management UI component',
-            'Format code according to regulations',
-            'Testing feature',
-            'Writing document'
-        ],
-        system: 'https://drawsql.app/',
-        figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
-        description: 'Lading page web công ty',
-        technologies: [
-            'React 18',
-            'Next.js 15',
-            'React motion',
-            'React-scroll',
-            'Tailwind 3',
-            'Swiperjs',
-            'eslint',
-            'prettier',
-            'vite'
-        ]
-    },
-    {
-        title: 'Tanngo',
-        link: 'https://heyday.game/',
-        demo: 'https://youtube.com',
-        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
-        pop_up: tanngo,
-        featureUser: [
-            'Multiple language options, ',
-            'Show detailed information client, ',
-            'Multiple display modes, ',
-            'User-friendly UI.',
-            'Single page application(One page)'
-        ],
-        featureDev: [
-            'Management UI component',
-            'Format code according to regulations',
-            'Testing feature',
-            'Writing document'
-        ],
-        system: 'https://drawsql.app/',
-        figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
-        description: 'Lading page web công ty',
-        technologies: ['React 18', 'Tailwind 3', 'eslint', 'prettier', 'vite']
-    },
+    // {
+    //     title: 'Games X Studio',
+    //     link: 'https://gamexstudio.com',
+    //     demo: 'https://youtube.com',
+    //     git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+    //     pop_up: gamexstudio,
+    //     featureUser: [
+    //         'Multiple language options, ',
+    //         'Show detailed information client, ',
+    //         'Multiple display modes, ',
+    //         'User-friendly UI.',
+    //         'Single page application(One page)'
+    //     ],
+    //     featureDev: [
+    //         'Management UI component',
+    //         'Format code according to regulations',
+    //         'Testing feature',
+    //         'Writing document'
+    //     ],
+    //     system: 'https://drawsql.app/',
+    //     figma: 'https://www.figma.com/design/KrR3NfHoodhIwsWIgCGuMC/GameXStudio?node-id=0-1&node-type=canvas&t=zuj7mow2F9oQZzNk-0',
+    //     description: 'Lading page web công ty',
+    //     technologies: [
+    //         'React 18',
+    //         'Next.js 15',
+    //         'React motion',
+    //         'React-scroll',
+    //         'Tailwind 3',
+    //         'Swiperjs',
+    //         'eslint',
+    //         'prettier',
+    //         'vite'
+    //     ]
+    // },
+    // {
+    //     title: 'Heyday Lading page',
+    //     link: 'https://heyday.game/',
+    //     demo: 'https://youtube.com',
+    //     git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+    //     pop_up: heyday,
+    //     featureUser: [
+    //         'Multiple language options, ',
+    //         'Show detailed information client, ',
+    //         'Multiple display modes, ',
+    //         'User-friendly UI.',
+    //         'Single page application(One page)'
+    //     ],
+    //     featureDev: [
+    //         'Management UI component',
+    //         'Format code according to regulations',
+    //         'Testing feature',
+    //         'Writing document'
+    //     ],
+    //     system: 'https://drawsql.app/',
+    //     figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
+    //     description: 'Lading page web công ty',
+    //     technologies: [
+    //         'React 18',
+    //         'Next.js 15',
+    //         'React motion',
+    //         'React-scroll',
+    //         'Tailwind 3',
+    //         'Swiperjs',
+    //         'eslint',
+    //         'prettier',
+    //         'vite'
+    //     ]
+    // },
+    // {
+    //     title: 'Tanngo',
+    //     link: 'https://heyday.game/',
+    //     demo: 'https://youtube.com',
+    //     git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+    //     pop_up: tanngo,
+    //     featureUser: [
+    //         'Multiple language options, ',
+    //         'Show detailed information client, ',
+    //         'Multiple display modes, ',
+    //         'User-friendly UI.',
+    //         'Single page application(One page)'
+    //     ],
+    //     featureDev: [
+    //         'Management UI component',
+    //         'Format code according to regulations',
+    //         'Testing feature',
+    //         'Writing document'
+    //     ],
+    //     system: 'https://drawsql.app/',
+    //     figma: 'https://www.figma.com/design/QxTgBlpcststqc7g4LhbCZ/Heyday-Landing-Page?node-id=284-1843',
+    //     description: 'Lading page web công ty',
+    //     technologies: ['React 18', 'Tailwind 3', 'eslint', 'prettier', 'vite']
+    // },
     {
         title: 'Restaurant Manage',
         link: 'https://portfolio-2024-sepia-theta.vercel.app/',
@@ -365,40 +365,40 @@ export const PROJECTS = [
             'prettier',
             'vite'
         ]
-    },
-    {
-        title: 'Social Media',
-        link: 'https://portfolio-2024-sepia-theta.vercel.app/',
-        demo: 'https://youtube.com',
-        git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
-        api: 'https://api.holetex.com/v1/we-connect/api-docs/',
-        pop_up: social,
-        featureUser: [
-            'Multiple language options, ',
-            'Show detailed information client, ',
-            'Multiple display modes, ',
-            'User-friendly UI.',
-            'Single page application(One page)'
-        ],
-        featureDev: [
-            'Management UI component',
-            'Format code according to regulations',
-            'Testing feature',
-            'Writing document'
-        ],
-        systemERD: 'https://drawsql.app/',
-        figma: 'https://www.figma.com/design/ww5QRFK9eUhy9389OheoV0/We-Connect-App?node-id=0-1&node-type=CANVAS&t=MZfpz1tHmgAuadc8-0',
-        description: 'Mạng xã hội kết nối mọi người',
-        technologies: [
-            'React 18',
-            'Next.js 15',
-            'Tailwind 3',
-            'ShadnUI',
-            'eslint',
-            'prettier',
-            'vite'
-        ]
     }
+    // {
+    //     title: 'Social Media',
+    //     link: 'https://portfolio-2024-sepia-theta.vercel.app/',
+    //     demo: 'https://youtube.com',
+    //     git: 'https://github.com/NguyenVanPhi92/Portfolio-2024',
+    //     api: 'https://api.holetex.com/v1/we-connect/api-docs/',
+    //     pop_up: social,
+    //     featureUser: [
+    //         'Multiple language options, ',
+    //         'Show detailed information client, ',
+    //         'Multiple display modes, ',
+    //         'User-friendly UI.',
+    //         'Single page application(One page)'
+    //     ],
+    //     featureDev: [
+    //         'Management UI component',
+    //         'Format code according to regulations',
+    //         'Testing feature',
+    //         'Writing document'
+    //     ],
+    //     systemERD: 'https://drawsql.app/',
+    //     figma: 'https://www.figma.com/design/ww5QRFK9eUhy9389OheoV0/We-Connect-App?node-id=0-1&node-type=CANVAS&t=MZfpz1tHmgAuadc8-0',
+    //     description: 'Mạng xã hội kết nối mọi người',
+    //     technologies: [
+    //         'React 18',
+    //         'Next.js 15',
+    //         'Tailwind 3',
+    //         'ShadnUI',
+    //         'eslint',
+    //         'prettier',
+    //         'vite'
+    //     ]
+    // }
 
     // // Javascript vanilla
     // {
