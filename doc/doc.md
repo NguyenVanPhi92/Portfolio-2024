@@ -3,6 +3,8 @@ yarn v1.22.21
 Website style: Single page application(One page)
 animation particles js
 
+task: create path alias folder
+
 Tech:
 
 -   React-scroll

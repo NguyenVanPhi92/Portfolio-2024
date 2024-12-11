@@ -2,6 +2,12 @@ import clsx from 'clsx'
 import { useEffect } from 'react'
 import { MdOutlineClose } from 'react-icons/md'
 
+// type Props = {
+//     onClose: (value: SetStateAction<boolean>) => void
+//     open: Boolean
+//     children: React.ReactNode
+// }
+
 const Modal = ({ open, onClose, children }) => {
     // handle block scroll user
     useEffect(() => {
