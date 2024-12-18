@@ -480,31 +480,7 @@ export const PROJECTS = [
     //     technologies: ['HTML5/CSS3', 'Javascript vanilla']
     // },
     // {
-    //     title: 'Weather app',
-    //     link: 'https://nguyenvanphi92.github.io/weather-app/',
-    //     pop_up: portfolioImg,
-    //     featureUser: [
-    //         'Authentication with JWT',
-    //         'Login (email and password, google, phone)',
-    //         'Logout',
-    //         'Register',
-    //         'Multiple language options',
-    //         'Show detailed information user and product',
-    //         'Management product (pagination, sorting, filter, search)',
-    //         'Management product cart(buy and update cart)',
-    //         'Management user(info, avatar, password, view order status, update)'
-    //     ],
-    //     featureDev: [
-    //         'Management UI component',
-    //         'Format code according to regulations',
-    //         'Testing feature',
-    //         'Writing document'
-    //     ],
-    //     figma: 'https://figma.com',
-    //     description:
-    //         'A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.',
-    //     technologies: ['HTML5/CSS3', 'Javascript vanilla']
-    // },
+
     // // HTML/CSS/SCSS Tailwind Bootstrap
     // {
     //     title: 'Coffee Page',
