@@ -21,7 +21,7 @@ const ExperienceComponent = () => {
                             </p>
                         </div>
 
-                        <div className='w-full max-w-xl lg:w-3/4:'>
+                        <div className='w-full max-w-xl lg:w-3/4'>
                             <h6 className='mb-2 font-semibold text-neutral-700 dark:text-neutral-300'>
                                 <p>
                                     {t(item.role)}{' '}
@@ -34,16 +34,17 @@ const ExperienceComponent = () => {
                                 {t(item.description)}
                             </p>
 
-                            {Array.isArray(item.technologies)
-                                ? item.technologies.map((a, idx) => (
-                                      <span
-                                          key={idx}
-                                          className='px-2 py-1 mt-4 mr-2 text-sm font-medium rounded-md bg-neutral-700 dark:bg-neutral-800 text-neutral-300 '
-                                      >
-                                          {a}
-                                      </span>
-                                  ))
-                                : null}
+                            <div className='flex flex-wrap gap-2'>
+                                {Array.isArray(item.technologies) &&
+                                    item.technologies.map((a, idx) => (
+                                        <p
+                                            key={idx}
+                                            className='px-2 py-1 text-sm font-medium rounded-md w-max bg-neutral-700 dark:bg-neutral-800 text-neutral-300 '
+                                        >
+                                            {a}
+                                        </p>
+                                    ))}
+                            </div>
                         </div>
                     </div>
                 ))}

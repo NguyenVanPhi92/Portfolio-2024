@@ -40,18 +40,16 @@ const ProjectsComponent = () => {
             {/* V1 */}
             <div className='w-full'>
                 {PROJECTS.map((pj, index) => (
-                    <div key={index} className='grid grid-flow-col mb-8'>
-                        <div className='relative h-auto mx-auto overflow-hidden rounded-lg w-60 '>
+                    <div key={index} className='flex'>
+                        <div className='relative mx-auto overflow-hidden rounded-lg h-[300px] w-[300px]'>
                             <img
                                 src={pj.pop_up}
                                 alt={pj.title}
-                                width={150}
-                                height={150}
-                                className='relative z-0 object-cover w-full h-48 transition-all duration-300 scale-110 rounded-lg cursor-pointer hover:scale-100'
+                                className='relative z-0 transition-all duration-300 scale-110 rounded-lg cursor-pointer hover:scale-100'
                             />
                         </div>
 
-                        <div className='w-full max-w-xl lg:w-3/4'>
+                        <div className=''>
                             <h6 className='mb-2 font-semibold text-neutral-700 dark:text-neutral-300'>
                                 <a href={pj.link} target='_blank'>
                                     {pj.title}
