@@ -3,7 +3,7 @@ import { FaHtml5, FaSass } from 'react-icons/fa'
 import { FaSquareJs } from 'react-icons/fa6'
 import { IoLogoCss3, IoLogoFirebase } from 'react-icons/io5'
 import { RiNextjsFill, RiReactjsLine } from 'react-icons/ri'
-import { SiShadcnui } from "react-icons/si";
+import { SiShadcnui } from 'react-icons/si'
 import { VscVscode } from 'react-icons/vsc'
 // Import Swiper React components
 import { CgFigma } from 'react-icons/cg'
@@ -36,7 +36,7 @@ const TechnologiesComponent = () => {
 
     //slider
     return (
-        <div className='pb-4 dark:border-b dark:border-neutral-900' id='technology'>
+        <div className='pb-10 dark:border-b dark:border-neutral-900' id='technology'>
             <TitleComponents
                 // title='Technologies & '
                 title={t('technologies_translate.title')}
