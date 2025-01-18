@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 :root {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 @font-face {
-    /* font-family: "GilroyRegular";
+  /* font-family: "GilroyRegular";
     src: local("GilroyRegular"),
       url("./fonts/Gilroy-Regular.otf") format("opentype");
     font-weight: normal; */
