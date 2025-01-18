@@ -6,11 +6,11 @@ import './i18n/i18n.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
-    <>
-        <BrowserRouter>
-            <MyAppContext>
-                <App />
-            </MyAppContext>
-        </BrowserRouter>
-    </>
+  <>
+    <BrowserRouter>
+      <MyAppContext>
+        <App />
+      </MyAppContext>
+    </BrowserRouter>
+  </>
 )

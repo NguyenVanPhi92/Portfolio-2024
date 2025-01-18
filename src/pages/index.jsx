@@ -10,65 +10,59 @@ import ProjectsComponent from '../components/Projects'
 import ScrollToTop from '../components/ScrollToTop'
 import TechnologiesComponent from '../components/Technologies'
 import TheEndComponent from '../components/TheEnd'
+import MessWidget from '../components/chat/MessWidget'
+import TelegramWidget from '../components/chat/TelegramWidget'
+import ZaloChatWidget from '../components/chat/ZaloChatWidget'
 
 export default function MyPage() {
-    const { scrollYProgress } = useScroll()
-    const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-    })
-    return (
-        /**
-         * selection:text-cyan-300 selection:bg-cyan-300
-         * click text auto blue
-         */
-
-        <div
-            onCopy={(e) => {
-                e.preventDefault()
-                alert('Không được sao chép văn bản này!')
-            }}
-            onDoubleClick={(e) => {
-                e.preventDefault()
-                alert('Không được sao chép văn bản này!')
-            }}
-            className='overflow-hidden antialiased select-none text-neutral-300 selection:text-white selection:bg-green-800'
-        >
-            {/* background web */}
-            <div className='fixed top-0 w-full h-full -z-10'>
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 })
+  return (
+    <div
+      onCopy={(e) => {
+        e.preventDefault()
+        alert('Không được sao chép văn bản này!')
+      }}
+      onDoubleClick={(e) => {
+        e.preventDefault()
+        alert('Không được sao chép văn bản này!')
+      }}
+      className='overflow-hidden antialiased select-none text-neutral-300 selection:text-white selection:bg-green-800'
+    >
+      {/* background web */}
+      {/* <div className='fixed top-0 w-full h-full -z-10'>
                 <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-[#0B001C] '></div>
-            </div>
+            </div> */}
 
-            {/* animation progress */}
-            <motion.div
-                className='fixed top-0 left-0 right-0 z-30 h-1 bg-emerald-600 dark:bg-emerald-800'
-                style={{
-                    scaleX,
-                    transformOrigin: '0%'
-                }}
-            />
+      {/* animation progress */}
+      <motion.div
+        className='fixed top-0 left-0 right-0 z-30 h-1 bg-emerald-600 dark:bg-emerald-800'
+        style={{ scaleX, transformOrigin: '0%' }}
+      />
 
-            <div className='mb-40'>
-                <HeaderComponent />
-            </div>
+      <div className='mb-40'>
+        <HeaderComponent />
+      </div>
 
-            {/* all page */}
-            <div className='w-10/12 px-8 mx-auto'>
-                <HeroComponent />
-                <AboutComponent />
-                <ExperienceComponent />
-                <ProjectsComponent />
-                <TechnologiesComponent />
-                <EducationComponent />
-                <InterestComponent />
-                <ContactComponent />
-                <TheEndComponent />
-            </div>
+      {/* all page */}
+      <div className='w-10/12 px-8 mx-auto'>
+        <HeroComponent />
+        <AboutComponent />
+        <ExperienceComponent />
+        <ProjectsComponent />
+        <TechnologiesComponent />
+        <EducationComponent />
+        <InterestComponent />
+        <ContactComponent />
+        <TheEndComponent />
+      </div>
 
-            <ScrollToTop />
-            {/* // Automatically scrolls to top whenever pathname changes */}
-            {/* <ScrollToTop /> */}
-        </div>
-    )
+      <ScrollToTop />
+      <TelegramWidget />
+      <MessWidget />
+      <ZaloChatWidget />
+      {/* // Automatically scrolls to top whenever pathname changes */}
+      {/* <ScrollToTop /> */}
+    </div>
+  )
 }

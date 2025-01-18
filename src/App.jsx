@@ -1,12 +1,15 @@
 import './App.css'
+import Background from './components/Background'
 import MyPage from './pages'
 
 function App() {
-    return (
-        <>
-            <MyPage />
-        </>
-    )
+  return (
+    <>
+      <Background>
+        <MyPage />
+      </Background>
+    </>
+  )
 }
 
 export default App
