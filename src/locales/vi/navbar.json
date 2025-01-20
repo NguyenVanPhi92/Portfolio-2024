@@ -1,12 +1,12 @@
 {
-    "navbar_translate": {
-        "home": "Trang Chủ",
-        "about": "Về tôi",
-        "experience": "Kinh Nghiệm",
-        "project": "Dự án",
-        "technologies": "Công nghệ",
-        "education": "Học Vấn",
-        "interest": "Sở thích",
-        "contact": "Liên hệ"
-    }
+  "navbar_translate": [
+    { "title": "Trang Chủ", "path": "1" },
+    { "title": "Về tôi", "path": "2" },
+    { "title": "Kinh Nghiệm", "path": "3" },
+    { "title": "Dự án", "path": "4" },
+    { "title": "Công nghệ", "path": "5" },
+    { "title": "Học Vấn", "path": "6" },
+    { "title": "Sở thích", "path": "7" },
+    { "title": "Liên hệ", "path": "8" }
+  ]
 }

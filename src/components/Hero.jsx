@@ -24,7 +24,7 @@ const HeroComponent = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className='pb-4 dark:border-b dark:border-neutral-900 lg:mb-36' id='home'>
+    <div className='pb-4 lg:mb-36' id='1'>
       <div className='flex flex-wrap'>
         <div className='w-full lg:w-1/2'>
           <div className='flex flex-col items-center lg:items-start'>

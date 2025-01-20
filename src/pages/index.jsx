@@ -31,8 +31,8 @@ export default function MyPage() {
     >
       {/* background web */}
       {/* <div className='fixed top-0 w-full h-full -z-10'>
-                <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-[#0B001C] '></div>
-            </div> */}
+              <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-[#0B001C] '></div>
+          </div> */}
 
       {/* animation progress */}
       <motion.div

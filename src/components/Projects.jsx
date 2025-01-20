@@ -10,7 +10,7 @@ const ProjectsComponent = () => {
   const { darkMode: theme } = useContext(MyContext)
 
   return (
-    <div className='pb-10 dark:border-neutral-900 dark:border-b' id='projects'>
+    <div className='pb-10 ' id='4'>
       <TitleComponents
         title={t('project_translate', {
           returnObjects: true

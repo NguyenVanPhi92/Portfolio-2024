@@ -5,7 +5,7 @@ const AboutComponent = () => {
   const { t } = useTranslation('about')
 
   return (
-    <div className='pb-4 dark:border-b dark:border-neutral-900' id='about'>
+    <div className='pb-4' id='2'>
       <TitleComponents
         title={t('about_translate.title').split(' ')[0]}
         subTitle={t('about_translate.title').split(' ')[1]}

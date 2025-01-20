@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 const EducationComponent = () => {
   const { t } = useTranslation('education')
   return (
-    <div id='education'>
+    <div id='6'>
       <TitleComponents title={t('education_translate.title')} />
       <div
         className='flex m-auto rounded-xl p-6 bg-slate-100 bg-opacity-55 dark:bg-opacity-90 dark:border text-neutral-800 dark:text-neutral-300 dark:border-neutral-800 border-neutral-400 dark:bg-[#0B001C] gap-10 mt-6 w-4/5 shadow-[rgba(0,_0,_0,_0.24)_0px_0.1px_2px]

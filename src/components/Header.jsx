@@ -16,7 +16,7 @@ const HeaderComponent = () => {
   const { t } = useTranslation('navbar')
 
   return (
-    <header className='px-4 w-full z-20 header top-0 start-0 border-b dark:border-none dark:backdrop-blur-lg shadow-md dark:shadow-[#1f1f3b]'>
+    <header className='px-4 w-full z-20 header top-0 start-0 border-b dark:border-none backdrop-blur-lg shadow-sm dark:shadow-[#1f1f3b]'>
       <div className='flex flex-wrap items-center justify-between mx-auto header-wrapper'>
         {/* logo */}
         <div className='flex items-center flex-shrink-0 logo'>
@@ -62,23 +62,28 @@ const HeaderComponent = () => {
           id='navbar-sticky'
         >
           <ul className='flex flex-col p-4 mt-4 font-medium border rounded-lg md:p-0 md:space-x-4 xl:space-x-8 xl:rtl:space-x-reverse md:flex-row md:mt-0 md:border-0'>
-            <li className='relative cursor-pointer group'>
-              <Link
-                activeClass='active'
-                spy={true}
-                smooth={true}
-                offset={-120}
-                duration={500}
-                //   onSetActive={handleSetActive}
-                to='home'
-                className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
-                aria-current='pag'
-              >
-                {t('navbar_translate.home')}
-              </Link>
-              <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
-            </li>
+            {t('navbar_translate', {
+              returnObjects: true
+            }).map((item, index) => (
+              <li className='relative cursor-pointer group' key={index}>
+                <Link
+                  activeClass='active'
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                  //   onSetActive={handleSetActive}
+                  to={item.path}
+                  className='block px-2 py-2 rounded md:bg-transparent md:p-0 dark:text-neutral-300 text-neutral-700'
+                  aria-current='pag'
+                >
+                  {item.title}
+                </Link>
+                <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
+              </li>
+            ))}
 
+            {/* 
             <li className='relative cursor-pointer group'>
               <Link
                 activeClass='active'
@@ -192,7 +197,7 @@ const HeaderComponent = () => {
                 {t('navbar_translate.contact')}
               </Link>
               <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

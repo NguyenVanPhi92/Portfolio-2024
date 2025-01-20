@@ -29,7 +29,7 @@ const TechnologiesComponent = () => {
 
   //slider
   return (
-    <div className='pb-10 dark:border-b dark:border-neutral-900' id='technology'>
+    <div className='pb-10' id='5'>
       <TitleComponents
         // title='Technologies & '
         title={t('technologies_translate.title')}

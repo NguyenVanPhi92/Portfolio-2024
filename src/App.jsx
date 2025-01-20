@@ -1,14 +1,11 @@
-import './App.css'
 import Background from './components/Background'
 import MyPage from './pages'
 
 function App() {
   return (
-    <>
-      <Background>
-        <MyPage />
-      </Background>
-    </>
+    <Background>
+      <MyPage />
+    </Background>
   )
 }
 

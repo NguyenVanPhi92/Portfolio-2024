@@ -1,13 +1,13 @@
 {
-    "project_translate": [
-        { "title": "Các Dự Án Của Tôi" },
-        {
-            "name": "Shoppe Clone",
-            "desc": "Một trang web demo giới thiệu các tính năng cơ bản của nền tảng thương mại điện tử, cho phép bạn mua sắm từ bất kỳ đâu chỉ cần kết nối internet."
-        },
-        {
-            "name": "Portfolio Website",
-            "desc": "Trong thời đại công nghệ phát triển, một trang web cá nhân có thể giúp bạn nổi bật hơn trước nhà tuyển dụng hoặc khách hàng."
-        }
-    ]
+  "project_translate": [
+    { "title": "Các Dự Án Của Tôi" },
+    {
+      "name": "Shoppe Clone",
+      "desc": "Một trang web demo giới thiệu các tính năng cơ bản của nền tảng thương mại điện tử, cho phép bạn mua sắm từ bất kỳ đâu chỉ cần kết nối internet."
+    },
+    {
+      "name": "Portfolio Website",
+      "desc": "Trong thời đại công nghệ phát triển, một trang web cá nhân có thể giúp bạn nổi bật hơn trước nhà tuyển dụng hoặc khách hàng."
+    }
+  ]
 }

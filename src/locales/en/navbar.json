@@ -1,12 +1,12 @@
 {
-    "navbar_translate": {
-        "home": "Home",
-        "about": "About",
-        "experience": "Experience",
-        "project": "Project",
-        "technologies": "Technologies",
-        "education": "Education",
-        "interest": "Interest",
-        "contact": "Contact"
-    }
+  "navbar_translate": [
+    { "title": "Home", "path": "1" },
+    { "title": "About", "path": "2" },
+    { "title": "Experience", "path": "3" },
+    { "title": "Project", "path": "4" },
+    { "title": "Technologies", "path": "5" },
+    { "title": "Education", "path": "6" },
+    { "title": "Interest", "path": "7" },
+    { "title": "Contact", "path": "8" }
+  ]
 }
