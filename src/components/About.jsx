@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import aboutImg from '../assets/pic/about/about-img.png'
 import TitleComponents from './Title'
+import { about } from '../assets/pic'
 const AboutComponent = () => {
   const { t } = useTranslation('about')
 
@@ -13,7 +14,7 @@ const AboutComponent = () => {
 
       <div className='flex flex-wrap justify-center'>
         <div className='w-[400px] lg:px-8'>
-          <img className='rounded-2xl' src={aboutImg} alt='aboutImg' />
+          <img className='rounded-2xl' src={about} alt='aboutImg' />
         </div>
 
         <div className='w-full lg:w-1/2'>
