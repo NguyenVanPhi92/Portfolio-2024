@@ -10,7 +10,6 @@ export default function useLinkNewTab() {
       links?.length > 0 && links.forEach((item) => item.setAttribute('target', '_blank'))
     }
   }, [])
-  return {
-    contentRef
-  }
+
+  return { contentRef }
 }

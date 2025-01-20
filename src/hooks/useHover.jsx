@@ -17,5 +17,6 @@ export default function useHover() {
       dom && dom.removeEventListener('mouseout', handleMouseOut)
     }
   }, [])
+
   return { hovered, nodeRef }
 }
