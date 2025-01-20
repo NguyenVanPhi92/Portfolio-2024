@@ -5,8 +5,10 @@ animation particles js
 
 Tech:
 
--   React-scroll
--   framer-motion
--   i18next
--   react-router-dom
--   swiper
+- HMTL
+- SCSS
+- Tailwindcss
+- React18
+- framer-motion
+- i18next
+- swiper

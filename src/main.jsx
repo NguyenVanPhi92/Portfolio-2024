@@ -4,6 +4,7 @@ import App from './App.jsx'
 import { MyAppContext } from './contexts/app.context'
 import './i18n/i18n.jsx'
 import './index.css'
+import './assets/scss/index.scss'
 
 createRoot(document.getElementById('root')).render(
   <>

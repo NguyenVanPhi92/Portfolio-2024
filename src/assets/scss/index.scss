@@ -1,7 +1,8 @@
-@import './customize';
-@import './mixin';
-@import './variables';
-@import './base';
+// @use './customize';
+// @use './mixin';
+// @use './variables';
+@use './base';
+@use './customize.scss';
 
-// import all style
+// use all style
 // ....

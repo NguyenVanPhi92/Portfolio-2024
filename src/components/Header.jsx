@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { BsTwitterX } from 'react-icons/bs'
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 import { LuGithub } from 'react-icons/lu'
+import { MdOutlineMenu } from 'react-icons/md'
 import { Link } from 'react-scroll'
 import logoDark from '../assets/pic/logos/logo-dark.png'
 import logoLight from '../assets/pic/logos/logo-light.png'
@@ -13,26 +14,28 @@ import MultilingualComponent from './Multilingual'
 const HeaderComponent = () => {
   const { darkMode: theme } = useContext(MyContext)
   const { t } = useTranslation('navbar')
-  console.log('them ', theme)
 
   return (
-    <nav className='px-4 w-full z-20 top-0 start-0 border-b dark:border-none bg-slate-50 dark:bg-[#0B001C] shadow-md dark:shadow-[#131321]'>
-      <div className='flex flex-wrap items-center justify-between mx-auto'>
+    <header className='px-4 w-full z-20 header top-0 start-0 border-b dark:border-none dark:backdrop-blur-lg shadow-md dark:shadow-[#1f1f3b]'>
+      <div className='flex flex-wrap items-center justify-between mx-auto header-wrapper'>
         {/* logo */}
-        <div className='flex items-center flex-shrink-0'>
+        <div className='flex items-center flex-shrink-0 logo'>
           <h2 className='font-mono text-3xl font-bold tracking-tight text-transparent bg-gradient-to-r from-emerald-600 via-slate-500 to-teal-700 bg-clip-text w-28'>
             <img
               src={theme === 'dark' ? logoDark : logoLight}
               alt='logo'
               width={50}
-              className='rounded-sm cursor-pointer'
+              className='rounded-sm cursor-pointer img'
             />
           </h2>
+          <div className='menu-icon'>
+            <MdOutlineMenu />
+          </div>
         </div>
 
         {/* Icons */}
-        <div className='flex justify-center items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse text-[16px] gap-[2px]'>
-          <div className='flex gap-1 mr-8 text-neutral-700 dark:text-neutral-300'>
+        <div className='flex header-wrapper__icons justify-center items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse text-[16px] gap-[2px]'>
+          <div className='flex gap-1 mr-8 icons_social text-neutral-700 dark:text-neutral-300'>
             <a href='https://www.linkedin.com/in/phinguyen98/' target='_blank'>
               <FaLinkedinIn className='cursor-pointer hover:text-teal-500' />
             </a>
@@ -47,15 +50,18 @@ const HeaderComponent = () => {
             </a>
           </div>
 
-          <div className='flex items-center text-neutral-700 dark:text-neutral-300'>
+          <div className='flex items-center icons_setting text-neutral-700 dark:text-neutral-300'>
             <DarkModeComponent />
             <MultilingualComponent />
           </div>
         </div>
 
         {/* Menu */}
-        <div className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1' id='navbar-sticky'>
-          <ul className='flex flex-col p-4 mt-4 font-medium border rounded-lg md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0'>
+        <nav
+          className='items-center justify-between hidden w-full header-wrapper__menu md:flex md:w-auto md:order-1'
+          id='navbar-sticky'
+        >
+          <ul className='flex flex-col p-4 mt-4 font-medium border rounded-lg md:p-0 md:space-x-4 xl:space-x-8 xl:rtl:space-x-reverse md:flex-row md:mt-0 md:border-0'>
             <li className='relative cursor-pointer group'>
               <Link
                 activeClass='active'
@@ -188,9 +194,9 @@ const HeaderComponent = () => {
               <p className='absolute w-full h-[1px] bg-slate-600 scale-x-0 group-hover:scale-x-100 transition-transform ease-linear'></p>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   )
 }
 
