@@ -13,11 +13,9 @@ import { FaGitAlt } from 'react-icons/fa6'
 import { LuCookie } from 'react-icons/lu'
 import { SiJsonwebtokens, SiPostman, SiReacthookform, SiReactquery, SiRedux, SiTailwindcss } from 'react-icons/si'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
-
 // import required modules
 import { useTranslation } from 'react-i18next'
 import { MdHttp } from 'react-icons/md'
@@ -40,10 +38,7 @@ const TechnologiesComponent = () => {
         slidesPerView={8}
         spaceBetween={10}
         // centeredSlides={true}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false
-        }}
+        autoplay={{ delay: 1500, disableOnInteraction: false }}
         pagination={
           {
             // clickable: true

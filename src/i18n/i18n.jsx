@@ -9,7 +9,6 @@ import INTEREST_EN from '../locales/en/interest.json'
 import NAVBAR_EN from '../locales/en/navbar.json'
 import PROJECT_EN from '../locales/en/project.json'
 import TECHNOLOGIES_EN from '../locales/en/technologies.json'
-
 //VI
 import HERO_VI from '../locales/vi/hero.json'
 import ABOUT_VI from '../locales/vi/about.json'

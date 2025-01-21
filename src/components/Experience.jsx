@@ -7,7 +7,6 @@ const ExperienceComponent = () => {
   return (
     <div className='pb-4' id='3'>
       <TitleComponents title={t('experience_translate', { returnObjects: true }).map((item) => t(item.title))} />
-
       <div>
         {t('experience_translate', { returnObjects: true }).map((item, idx) => (
           <div className='flex flex-wrap mb-8 lg:justify-center' key={idx}>

@@ -8,14 +8,9 @@ export default function Background({ children }) {
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine)
   }, [])
-
-  console.log('bg: ', theme)
-
   const options = useMemo(() => {
     return {
-      background: {
-        color: { value: `${theme === 'dark' ? '#0B001C' : '#ffffff'}` }
-      },
+      background: { color: { value: `${theme === 'dark' ? '#0B001C' : '#ffffff'}` } },
       fpsLimit: 120,
       particles: {
         color: { value: `${theme === 'dark' ? '#ffffff' : '#15916f'}` },
@@ -39,14 +34,7 @@ export default function Background({ children }) {
       <Particles
         init={particlesInit}
         options={options}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: -1 // Đặt phía sau nội dung
-        }}
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}
       />
       {/* Nội dung khác */}
       <div style={{ position: 'relative', zIndex: 1 }}>{children}</div>

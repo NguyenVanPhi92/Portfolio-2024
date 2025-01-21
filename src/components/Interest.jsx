@@ -49,7 +49,6 @@ const InterestComponent = () => {
   return (
     <div className='text-center' id='7'>
       <TitleComponents title={t('interest_translate.title')} />
-
       {/* cards section */}
       <div className='container mx-auto'>
         <div className='grid justify-center w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3'>

@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next'
-import aboutImg from '../assets/pic/about/about-img.png'
-import TitleComponents from './Title'
 import { about } from '../assets/pic'
+import TitleComponents from './Title'
 const AboutComponent = () => {
   const { t } = useTranslation('about')
 
@@ -16,7 +15,6 @@ const AboutComponent = () => {
         <div className='w-[400px] lg:px-8'>
           <img className='rounded-2xl' src={about} alt='aboutImg' />
         </div>
-
         <div className='w-full lg:w-1/2'>
           <p className='max-w-xl py-4 my-2 text-neutral-700 dark:text-neutral-300 dark:font-light'>
             {t('about_translate.desc')}.
