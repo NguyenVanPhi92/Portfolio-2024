@@ -27,6 +27,7 @@ const HeroComponent = () => {
     <div className='pb-4 lg:mb-36' id='1'>
       <div className='flex flex-wrap'>
         <div className='w-full lg:w-1/2'>
+          {/* Text */}
           <div className='flex flex-col items-center lg:items-start'>
             <motion.h1
               variants={container(0.1)}
@@ -57,6 +58,7 @@ const HeroComponent = () => {
             </motion.p>
           </div>
 
+          {/* Resume */}
           <motion.button
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -69,12 +71,14 @@ const HeroComponent = () => {
           </motion.button>
         </div>
 
+        {/* Image */}
         <div className='w-full lg:w-1/2 lg:-8'>
           <div className='flex justify-center h-4/5 '>
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
+              loading='lazy'
               src={heroImg}
               alt='profile'
               className='object-cover'
@@ -83,6 +87,7 @@ const HeroComponent = () => {
         </div>
       </div>
 
+      {/* Modal CV */}
       <Modal open={open} onClose={() => setOpen(false)}>
         <div className='w-48 mx-auto my-4'>
           <h3 className='text-lg font-semibold text-center text-gray-800'>Chọn CV để xem</h3>

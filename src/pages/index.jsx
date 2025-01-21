@@ -1,18 +1,18 @@
+import AboutComponent from '@components/About'
+import MessWidget from '@components/chat/MessWidget'
+import TelegramWidget from '@components/chat/TelegramWidget'
+import ZaloChatWidget from '@components/chat/ZaloChatWidget'
+import ContactComponent from '@components/Contact'
+import EducationComponent from '@components/Education'
+import ExperienceComponent from '@components/Experience'
+import HeaderComponent from '@components/Header'
+import HeroComponent from '@components/Hero'
+import InterestComponent from '@components/Interest'
+import ProjectsComponent from '@components/Projects'
+import ScrollToTop from '@components/ScrollToTop'
+import TechnologiesComponent from '@components/Technologies'
+import TheEndComponent from '@components/TheEnd'
 import { motion, useScroll, useSpring } from 'framer-motion'
-import AboutComponent from '../components/About'
-import ContactComponent from '../components/Contact'
-import EducationComponent from '../components/Education'
-import ExperienceComponent from '../components/Experience'
-import HeaderComponent from '../components/Header'
-import HeroComponent from '../components/Hero'
-import InterestComponent from '../components/Interest'
-import ProjectsComponent from '../components/Projects'
-import ScrollToTop from '../components/ScrollToTop'
-import TechnologiesComponent from '../components/Technologies'
-import TheEndComponent from '../components/TheEnd'
-import MessWidget from '../components/chat/MessWidget'
-import TelegramWidget from '../components/chat/TelegramWidget'
-import ZaloChatWidget from '../components/chat/ZaloChatWidget'
 
 export default function MyPage() {
   const { scrollYProgress } = useScroll()
@@ -45,7 +45,7 @@ export default function MyPage() {
       </div>
 
       {/* all page */}
-      <div className='w-10/12 px-8 mx-auto'>
+      <div className='w-10/12 mx-auto'>
         <HeroComponent />
         <AboutComponent />
         <ExperienceComponent />
