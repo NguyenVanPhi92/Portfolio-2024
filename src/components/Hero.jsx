@@ -4,8 +4,6 @@ import { CiSaveDown2 } from 'react-icons/ci'
 import heroImg from '../assets/pic/hero/hero-img.png'
 import { useState } from 'react'
 import Modal from './Modal'
-import cv_en from '../assets/cv/cv_en.pdf'
-import cv_vi from '../assets/cv/cv_vi.pdf'
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -96,7 +94,7 @@ const HeroComponent = () => {
           <div className='flex justify-center my-8'>
             <a
               target='_blank'
-              href={cv_en}
+              href='#'
               onClick={() => setOpen(false)}
               className='px-4 py-2 mr-2 text-black bg-gray-300 rounded-lg hover:bg-gray-400'
             >
@@ -104,7 +102,7 @@ const HeroComponent = () => {
             </a>
             <a
               target='_blank'
-              href={cv_vi}
+              href='#'
               onClick={() => setOpen(false)}
               className='px-4 py-2 text-white rounded-lg bg-emerald-600 hover:bg-emerald-400 dark:bg-emerald-700'
             >
