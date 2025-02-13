@@ -27,16 +27,11 @@ export default function MyPage() {
         e.preventDefault()
         alert('Không được sao chép văn bản này!')
       }}
-      className='overflow-hidden antialiased select-none text-neutral-300 selection:text-white selection:bg-green-800'
+      className='overflow-hidden antialiased select-none text-neutral-300 selection:text-white'
     >
-      {/* background web */}
-      {/* <div className='fixed top-0 w-full h-full -z-10'>
-              <div className='absolute top-0 z-[-2] h-screen w-screen dark:bg-[#0B001C] '></div>
-          </div> */}
-
       {/* animation progress */}
       <motion.div
-        className='fixed top-0 left-0 right-0 z-30 h-1 bg-emerald-600 dark:bg-emerald-800'
+        className='fixed top-0 left-0 right-0 z-30 h-[3px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
         style={{ scaleX, transformOrigin: '0%' }}
       />
 

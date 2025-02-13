@@ -6,7 +6,7 @@ import { IoMdPhonePortrait } from 'react-icons/io'
 
 const ContactComponent = () => {
   return (
-    <div className='' id='8'>
+    <div className='text-[12px] md:text-[16px]' id='8'>
       <TitleComponents title='Get in touch' />
       <div className='flex items-center justify-center gap-6 mb-8 tracking-tighter dark:text-neutral-400 text-neutral-700'>
         <div className='flex items-center gap-2'>
