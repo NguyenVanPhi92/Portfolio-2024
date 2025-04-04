@@ -51,9 +51,9 @@ export const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: 'vi', // default langue
+  lng: 'en', // default langue
   ns: ['about', 'contact', 'education', 'experience', 'hero', 'interest', 'navbar', 'project', 'technologies'], // cac namespace dung i18n
-  fallbackLng: 'vi', // khi không xác định đc ngôn ngữ gì thì sẽ chuyển về ngôn ngữ vi
+  fallbackLng: 'en', // khi không xác định đc ngôn ngữ gì thì sẽ chuyển về ngôn ngữ vi
   // defaultNS, // set namespace default
   interpolation: { escapeValue: false } // react already safes from xss
 })

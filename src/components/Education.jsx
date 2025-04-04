@@ -15,7 +15,7 @@ const EducationComponent = () => {
             <div className='dark:bg-[#0B001C] absolute p-2 top-[-8px] left-[-44px]'>
               <LiaUniversitySolid className='text-2xl text-neutral-500' />
             </div>
-            <p>9/2020 - 12/2022</p>
+            <p>Sep 2020 - Nov 2022</p>
             <h3 className='text-2xl font-bold'>SaiGon College</h3>
             <p>
               <span>Computer Programming </span> -{' '}
@@ -85,7 +85,7 @@ const EducationComponent = () => {
           <div className='dark:bg-[#0B001C] absolute p-2 text-2xl top-0 left-[-20px]'>
             <LiaUniversitySolid className='text-2xl text-neutral-500' />
           </div>
-          <p>10/2024 - Present</p>
+          <p>Oct 2024 - Present</p>
           <h3 className='text-2xl font-bold'>English center</h3>
           <p>
             <span>Ielts Fighter</span> -{' '}
