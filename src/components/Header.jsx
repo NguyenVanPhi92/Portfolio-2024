@@ -20,7 +20,7 @@ const HeaderComponent = () => {
   return (
     <header className='w-full px-4 header'>
       <div className='flex flex-wrap items-center justify-between mx-auto header-wrapper'>
-        {/* logo */}
+        {/* Logo */}
         <div className='logo'>
           <img
             src={theme === 'dark' ? logoDark : logoLight}
