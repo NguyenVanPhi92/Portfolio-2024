@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
-import EnglishReader1 from 'src/EnglishReader1'
 import { MyContext } from '../contexts/app.context'
 import TitleComponents from './Title'
 
@@ -34,7 +33,6 @@ const ProjectsComponent = () => {
       />
 
       {/* <img src={`${theme === 'dark' ? img : img1}`} alt='' className='w-[600] h-[400px] m-auto' /> */}
-      <EnglishReader1 />
     </div>
   )
 }

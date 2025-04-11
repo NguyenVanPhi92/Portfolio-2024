@@ -1,10 +1,11 @@
 import Background from './components/Background'
-import MyPage from './pages'
+import EnglishReader1 from './EnglishReader1'
 
 function App() {
   return (
     <Background>
-      <MyPage />
+      {/* <MyPage /> */}
+      <EnglishReader1 />
     </Background>
   )
 }
