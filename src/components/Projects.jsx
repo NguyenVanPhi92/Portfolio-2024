@@ -2,6 +2,8 @@ import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import { MyContext } from '../contexts/app.context'
 import TitleComponents from './Title'
+// import img from '../assets/pic/projects/'
+// import img1 from '../assets/images/Projects1.png'
 
 const ProjectsComponent = () => {
   const { t } = useTranslation('project')
